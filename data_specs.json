@@ -1,0 +1,2281 @@
+{
+  "corp": {
+    "description": "iShares International Treasury Bond ETF",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Corporate Bonds",
+    "region": "US",
+    "source": { "name": "yahoo", "kwargs": { "code": "CORP", "name": "CORP" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "LQD": {
+    "description": "iShares iBoxx $ Invmt Grade Corp Bd ETF ",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "IG Corporate Bonds",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "LQD", "name": "LQD" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "HYG": {
+    "description": "iShares iBoxx USD High Yield Corporate Bond ETF",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "High Yield Corporate Bonds",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "HYG", "name": "HYG" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "GOVT": {
+    "description": "iShares US Treasury Bond ETF",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Government Bonds",
+    "region": "US",
+    "source": { "name": "yahoo", "kwargs": { "code": "GOVT", "name": "GOVT" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "IGOV": {
+    "description": "iShares International Treasury Bond ETF",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Government Bonds",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "IGOV", "name": "IGOV" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "EMB": {
+    "description": "iShares JPMorgan USD Emerging Markets Bond ETF",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Government Bonds",
+    "region": "EM",
+    "source": { "name": "yahoo", "kwargs": { "code": "EMB", "name": "EMB" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "CEMB": {
+    "description": "iShares J.P. Morgan EM Corporate Bond ETF",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Corporate Bonds",
+    "region": "EM",
+    "source": { "name": "yahoo", "kwargs": { "code": "CEMB", "name": "CEMB" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "EMLC": {
+    "description": "Market Vectors Emerging Markets Local Currency Bond ETF",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Government Local Currency Bonds",
+    "region": "EM",
+    "source": { "name": "yahoo", "kwargs": { "code": "EMLC", "name": "EMLC" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "dxy": {
+    "description": "US Dollar/USDX - Index - Cash",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Currencies",
+    "region": "US",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "DX-Y.NYB", "name": "DX-Y.NYB" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "SPY": {
+    "description": "SPDR S&P 500 ETF",
+    "asset_class": "Equities",
+    "sub_asset_class": "Broad Market",
+    "region": "US",
+    "source": { "name": "yahoo", "kwargs": { "code": "SPY", "name": "SPY" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "IYM": {
+    "description": "iShares U.S. Basic Materials ETF",
+    "asset_class": "Equities",
+    "sub_asset_class": "Basic Materials",
+    "region": "US",
+    "source": { "name": "yahoo", "kwargs": { "code": "IYM", "name": "IYM" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "IXP": {
+    "description": "iShares Global Comm Services ETF",
+    "asset_class": "Equities",
+    "sub_asset_class": "Communications",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "IXP", "name": "IXP" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "IYC": {
+    "description": "iShares US Consumer Discretionary ETF",
+    "asset_class": "equities",
+    "sub_asset_class": "Consumer Discretionary",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "IYC", "name": "IYC" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "IYK": {
+    "description": "iShares US Consumer Staples ETF",
+    "asset_class": "equities",
+    "sub_asset_class": "Consumer Staples",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "IYK", "name": "IYK" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "IYE": {
+    "description": "iShares U.S. Energy ETF",
+    "asset_class": "equities",
+    "sub_asset_class": "Energy",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "IYE", "name": "IYE" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "IYF": {
+    "description": "iShares U.S. Financials ETF",
+    "asset_class": "equities",
+    "sub_asset_class": "Financials",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "IYF", "name": "IYF" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "IYH": {
+    "description": "iShares U.S. Healthcare ETF",
+    "asset_class": "equities",
+    "sub_asset_class": "Healthcare",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "IYH", "name": "IYH" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "IYJ": {
+    "description": "iShares U.S. Industrials ETF",
+    "asset_class": "equities",
+    "sub_asset_class": "industrials",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "IYJ", "name": "IYJ" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "IYR": {
+    "description": "iShares U.S. Real Estate ETF",
+    "asset_class": "equities",
+    "sub_asset_class": "real estate",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "IYR", "name": "IYR" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "IDU": {
+    "description": "iShares U.S. Utilities ETF",
+    "asset_class": "equities",
+    "sub_asset_class": "utilities",
+    "region": "US",
+    "source": { "name": "yahoo", "kwargs": { "code": "IDU", "name": "IDU" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "JXI": {
+    "description": "iShares Global Utilities ETF",
+    "asset_class": "equities",
+    "sub_asset_class": "utilities",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "JXI", "name": "JXI" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "BBEU": {
+    "description": "JPMorgan BetaBuilders Europe ETF",
+    "asset_class": "equities",
+    "sub_asset_class": "ETF",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "BBEU", "name": "BBEU" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "EZU": {
+    "description": "iShares MSCI Eurozone ETF",
+    "asset_class": "equities",
+    "sub_asset_class": "equities",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "EZU", "name": "EZU" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "VGK": {
+    "description": "Vanguard European Stock Index Fund",
+    "asset_class": "equities",
+    "sub_asset_class": "equities",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "VGK", "name": "VGK" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "EEM": {
+    "description": "iShares MSCI Emerging Markets ETF",
+    "asset_class": "equities",
+    "sub_asset_class": "equities",
+    "region": "emerging markets",
+    "source": { "name": "yahoo", "kwargs": { "code": "EEM", "name": "EEM" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "SPTI": {
+    "description": "SPDR Intermediary Bonds",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Government Bonds",
+    "region": "US",
+    "source": { "name": "yahoo", "kwargs": { "code": "SPTI", "name": "SPTI" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "GSG": {
+    "description": "commodities_index(s&p_ishares)",
+    "asset_class": "commodities",
+    "sub_asset_class": "commodities",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "GSG", "name": "GSG" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "^GSPC": {
+    "description": "S&P 500 Index",
+    "asset_class": "Equities",
+    "sub_asset_class": "equities",
+    "region": "US",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "^GSPC", "name": "^GSPC" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "^IRX": {
+    "description": "US Treasury 3m",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Government Bonds",
+    "region": "US",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "^IRX", "name": "us_3m_rate" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "^FVX": {
+    "description": "US Treasury 5Y",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Government Bonds",
+    "region": "US",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "^FVX", "name": "us_5y_rate" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "^TNX": {
+    "description": "US Treasury 10Y",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Government Bonds",
+    "region": "US",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "^TNX", "name": "us_10y_rate" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "^TYX": {
+    "description": "US Treasury 30Y",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Government Bonds",
+    "region": "US",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "^TYX", "name": "us_30y_rate" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "^MOVE": {
+    "description": "ICE BofAML MOVE Index",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Corporate Bonds",
+    "region": "US",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "^MOVE", "name": "^MOVE" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "EURUSD=X": {
+    "description": "EURUSD",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Currencies",
+    "region": "Global",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "EURUSD=X", "name": "EURUSD=X" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "GBPUSD=X": {
+    "description": "GBPUSD",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Currencies",
+    "region": "Global",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "GBPUSD=X", "name": "GBPUSD=X" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "CAD=X": {
+    "description": "USDCAD",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Currencies",
+    "region": "Global",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "CAD=X", "name": "CAD=X" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "AUDUSD=X": {
+    "description": "AUDUSD",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Currencies",
+    "region": "Global",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "AUDUSD=X", "name": "AUDUSD=X" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "NZDUSD=X": {
+    "description": "NZDUSD",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Currencies",
+    "region": "Global",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "NZDUSD=X", "name": "NZDUSD=X" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "JPY=X": {
+    "description": "USDJPY",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Currencies",
+    "region": "Global",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "JPY=X", "name": "JPY=X" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "SEK=X": {
+    "description": "USDSEK",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Currencies",
+    "region": "Global",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "SEK=X", "name": "SEK=X" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "NOK=X": {
+    "description": "USDNOK",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Currencies",
+    "region": "Global",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "NOK=X", "name": "NOK=X" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "PLN=X": {
+    "description": "USDPLN",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Currencies",
+    "region": "Global",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "PLN=X", "name": "PLN=X" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "HUF=X": {
+    "description": "USDHUF",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Currencies",
+    "region": "Global",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "HUF=X", "name": "HUF=X" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "CZK=X": {
+    "description": "USDCZK",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Currencies",
+    "region": "Global",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "CZK=X", "name": "CZK=X" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "MXN=X": {
+    "description": "USDMXN",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Currencies",
+    "region": "Global",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "MXN=X", "name": "MXN=X" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "BRL=X": {
+    "description": "USDBRL",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Currencies",
+    "region": "Global",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "BRL=X", "name": "BRL=X" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "ZAR=X": {
+    "description": "USDZAR",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Currencies",
+    "region": "Global",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "ZAR=X", "name": "ZAR=X" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "TRY=X": {
+    "description": "USDTRY",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Currencies",
+    "region": "Global",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "TRY=X", "name": "TRY=X" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "GC=F": {
+    "description": "gold_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Metals",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "GC=F", "name": "GC=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "SI=F": {
+    "description": "silver_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Metals",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "SI=F", "name": "SI=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "HG=F": {
+    "description": "copper_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Metals",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "HG=F", "name": "HG=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "PL=F": {
+    "description": "platinum_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Metals",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "PL=F", "name": "PL=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "PA=F": {
+    "description": "palladiium_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Metals",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "PA=F", "name": "PA=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "ALI=F": {
+    "description": "alluminum_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Metals",
+    "region": "Global",
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "ALI=F", "name": "ALI=F" }
+    },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "CC=F": {
+    "description": "coccoa_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Soft",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "CC=F", "name": "CC=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "KC=F": {
+    "description": "coffee_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Soft",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "KC=F", "name": "KC=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "SB=F": {
+    "description": "sugar_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Soft",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "SB=F", "name": "SB=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "OJ=F": {
+    "description": "orangeJ_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Soft",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "OJ=F", "name": "OJ=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "CT=F": {
+    "description": "cotton_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Soft",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "CT=F", "name": "CT=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "GF=F": {
+    "description": "feeder_cattle_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Meat",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "GF=F", "name": "GF=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "HE=F": {
+    "description": "lean_hogs_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Meat",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "HE=F", "name": "HE=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "LE=F": {
+    "description": "live_cattle_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Meat",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "LE=F", "name": "LE=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "DC=F": {
+    "description": "milk_classIII_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Meat",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "DC=F", "name": "DC=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "BZ=F": {
+    "description": "brent_oil_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Energy",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "BZ=F", "name": "BZ=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "CL=F": {
+    "description": "wti_oil_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Energy",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "CL=F", "name": "CL=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "RB=F": {
+    "description": "gasoline_oil_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Energy",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "RB=F", "name": "RB=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "HO=F": {
+    "description": "heating_oil_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Energy",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "HO=F", "name": "HO=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "NG=F": {
+    "description": "natural_gas_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Energy",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "NG=F", "name": "NG=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "ZW=F": {
+    "description": "wheat_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Grains",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "ZW=F", "name": "ZW=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "ZR=F": {
+    "description": "rice_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Grains",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "ZR=F", "name": "ZR=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "ZC=F": {
+    "description": "corn_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Grains",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "ZC=F", "name": "ZC=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "ZM=F": {
+    "description": "soybean_meal_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Grains",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "ZM=F", "name": "ZM=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "ZL=F": {
+    "description": "soybean_oil_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Grains",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "ZL=F", "name": "ZL=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "ZS=F": {
+    "description": "soybean_fut",
+    "asset_class": "Commodities",
+    "sub_asset_class": "Grains",
+    "region": "Global",
+    "source": { "name": "yahoo", "kwargs": { "code": "ZS=F", "name": "ZS=F" } },
+    "frequency": ["d", "m", "q", "a"]
+  },
+  "us_cpi": {
+    "description": "US CPI Index level",
+    "asset_class": "Inflation",
+    "sub_asset_class": "cpi",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "CUUR0000SA0", "name": "us_cpi" }
+    },
+    "frequency": ["m"]
+  },
+  "us_cpi_core": {
+    "description": "US CPI Core Index level",
+    "asset_class": "Inflation",
+    "sub_asset_class": "cpi_core",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "CUUR0000SA0L1E", "name": "us_cpi_core" }
+    },
+    "frequency": ["m"]
+  },
+  "us_cpi_food": {
+    "description": "US CPI Food Index level",
+    "asset_class": "Inflation",
+    "sub_asset_class": "cpi_food",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "CUUR0000SAF1", "name": "us_cpi_food" }
+    },
+    "frequency": ["m"]
+  },
+  "us_cpi_energy": {
+    "description": "US CPI Energy Index level",
+    "asset_class": "Inflation",
+    "sub_asset_class": "cpi_energy",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "CUUR0000SA0E", "name": "us_cpi_energy" }
+    },
+    "frequency": ["m"]
+  },
+  "us_cpi_gasoline": {
+    "description": "US CPI Gasoline Index level",
+    "asset_class": "Inflation",
+    "sub_asset_class": "cpi_others",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "CUUR0000SETB01", "name": "us_cpi_gasoline" }
+    },
+    "frequency": ["m"]
+  },
+  "us_cpi_medicare": {
+    "description": "US CPI Medicare Index level",
+    "asset_class": "Inflation",
+    "sub_asset_class": "cpi_others",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "CUUR0000SAM", "name": "us_cpi_medicare" }
+    },
+    "frequency": ["m"]
+  },
+  "us_cpi_shelter": {
+    "description": "US CPI Shelter Index level",
+    "asset_class": "Inflation",
+    "sub_asset_class": "cpi_others",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "CUUR0000SAH1", "name": "us_cpi_shelter" }
+    },
+    "frequency": ["m"]
+  },
+  "us_cpi_rent_sa": {
+    "description": "US CPI Rent Index level",
+    "asset_class": "Inflation",
+    "sub_asset_class": "cpi_others",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "CUSR0000SEHA", "name": "us_cpi_rent_sa" }
+    },
+    "frequency": ["m"]
+  },
+  "us_nonfarm_payroll_sa": {
+    "description": "US non-farm Payrolls",
+    "asset_class": "Employment",
+    "sub_asset_class": "nfpayroll",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "CES0000000001", "name": "us_nonfarm_payroll_sa" }
+    },
+    "frequency": ["m"]
+  },
+  "us_avg_hour_earn_sa": {
+    "description": "US Average Hourly Earnings",
+    "asset_class": "Employment",
+    "sub_asset_class": "avg_hour_earn",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "CES0500000003", "name": "us_avg_hour_earn_sa" }
+    },
+    "frequency": ["m"]
+  },
+  "us_unemployment": {
+    "description": "US Unemployment Rate",
+    "asset_class": "Employment",
+    "sub_asset_class": "unemployment_rate",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "LNS14000000", "name": "us_unemployment" }
+    },
+    "frequency": ["m"]
+  },
+  "us_civ_work_compensation": {
+    "description": "US Civil Work Compensation",
+    "asset_class": "Employment",
+    "sub_asset_class": "empl_others",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": {
+        "code": "CIU1010000000000A",
+        "name": "us_civ_work_compensation"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "us_civ_work_wages": {
+    "description": "US Civil Workers Wages",
+    "asset_class": "Employment",
+    "sub_asset_class": "empl_others",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "CIU1020000000000A", "name": "us_civ_work_wages" }
+    },
+    "frequency": ["m"]
+  },
+  "us_civ_work_benefits": {
+    "description": "US Civil Work Benefits",
+    "asset_class": "Employment",
+    "sub_asset_class": "empl_others",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "CIU1030000000000A", "name": "us_civ_work_benefits" }
+    },
+    "frequency": ["m"]
+  },
+  "us_priv_work_compensation": {
+    "description": "US Private Workers Compensation",
+    "asset_class": "Employment",
+    "sub_asset_class": "empl_others",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": {
+        "code": "CIU2010000000000A",
+        "name": "us_priv_work_compensation"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "us_priv_work_wages": {
+    "description": "US Private Workers Wages",
+    "asset_class": "Employment",
+    "sub_asset_class": "empl_others",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "CIU2020000000000A", "name": "us_priv_work_wages" }
+    },
+    "frequency": ["m"]
+  },
+  "us_priv_work_benefits": {
+    "description": "US Private Workers Benefits",
+    "asset_class": "Employment",
+    "sub_asset_class": "empl_others",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "CIU2030000000000A", "name": "us_priv_work_benefits" }
+    },
+    "frequency": ["m"]
+  },
+  "us_govt_work_compensation": {
+    "description": "US Govt Work Compensation",
+    "asset_class": "Employment",
+    "sub_asset_class": "empl_others",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": {
+        "code": "CIU3010000000000A",
+        "name": "us_govt_work_compensation"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "us_govt_work_wages": {
+    "description": "US Government Workers Wages",
+    "asset_class": "Employment",
+    "sub_asset_class": "empl_others",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "CIU3020000000000A", "name": "us_govt_work_wages" }
+    },
+    "frequency": ["m"]
+  },
+  "us_govt_work_benefits": {
+    "description": "US Government Workers Benefits",
+    "asset_class": "Employment",
+    "sub_asset_class": "empl_others",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "CIU3030000000000A", "name": "us_govt_work_benefits" }
+    },
+    "frequency": ["m"]
+  },
+  "us_job_openings": {
+    "description": "US Job Openings",
+    "asset_class": "Employment",
+    "sub_asset_class": "empl_others",
+    "region": "US",
+    "source": {
+      "name": "bls",
+      "kwargs": { "code": "JTS000000000000000JOL", "name": "us_job_openings" }
+    },
+    "frequency": ["m"]
+  },
+  "us_M1": {
+    "description": "US M1 value",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Monetary",
+    "region": "US",
+    "source": { "name": "fred", "kwargs": { "code": "M1SL", "name": "us_M1" } },
+    "frequency": ["m"]
+  },
+  "us_michigan_cons_conf": {
+    "description": "us_michigan_cons_conf",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "US",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "UMCSENT", "name": "us_michigan_cons_conf" }
+    },
+    "frequency": ["m"]
+  },
+  "us_IG_spread": {
+    "description": "us_IG_spread",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Corporate Bonds",
+    "region": "US",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "BAMLC0A0CM", "name": "us_IG_spread" }
+    },
+    "frequency": ["m"]
+  },
+  "us_BBB_spread": {
+    "description": "us_BBB_spread",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Corporate Bonds",
+    "region": "US",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "BAMLC0A4CBBB", "name": "us_BBB_spread" }
+    },
+    "frequency": ["m"]
+  },
+  "us_BB_spread": {
+    "description": "us_BB_spread",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Corporate Bonds",
+    "region": "US",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "BAMLH0A1HYBB", "name": "us_BB_spread" }
+    },
+    "frequency": ["m"]
+  },
+  "us_HY_spread": {
+    "description": "us_HY_spread",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Corporate Bonds",
+    "region": "US",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "BAMLH0A0HYM2", "name": "us_HY_spread" }
+    },
+    "frequency": ["m"]
+  },
+  "us_A_spread": {
+    "description": "us_A_spread",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Corporate Bonds",
+    "region": "US",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "BAMLC0A3CA", "name": "us_A_spread" }
+    },
+    "frequency": ["m"]
+  },
+  "us_AA_spread": {
+    "description": "us_AA_spread",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Corporate Bonds",
+    "region": "US",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "BAMLC0A2CAA", "name": "us_AA_spread" }
+    },
+    "frequency": ["m"]
+  },
+  "us_B_spread": {
+    "description": "us_B_spread",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Corporate Bonds",
+    "region": "US",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "BAMLH0A2HYB", "name": "us_B_spread" }
+    },
+    "frequency": ["m"]
+  },
+  "us_EM_spread": {
+    "description": "us_EM_spread",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Corporate Bonds",
+    "region": "EM",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "BAMLEMCBPIOAS", "name": "us_EM_spread" }
+    },
+    "frequency": ["m"]
+  },
+  "us_10y_real_rate": {
+    "description": "us_10y_real_rate",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Interest Rates",
+    "region": "US",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "REAINTRATREARAT10Y", "name": "us_10y_real_rate" }
+    },
+    "frequency": ["m"]
+  },
+  "us_5v5_inflation": {
+    "description": "us_5v5_inflation",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "cpi_others",
+    "region": "US",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "T5YIFR", "name": "us_5v5_inflation" }
+    },
+    "frequency": ["m"]
+  },
+  "us_5y_be_inflation": {
+    "description": "us_5y_be_inflation",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "cpi_others",
+    "region": "US",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "T5YIE", "name": "us_5y_be_inflation" }
+    },
+    "frequency": ["m"]
+  },
+  "eu_hcpi": {
+    "description": "eu_hcpi",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "cpi",
+    "region": "EU",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "CPHPTT01EZM659N", "name": "eu_hcpi" }
+    },
+    "frequency": ["m"]
+  },
+  "eu_hcpi_core": {
+    "description": "eu_hcpi_core",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "cpi_core",
+    "region": "EU",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "CPHPLA01EZM661N", "name": "eu_hcpi_core" }
+    },
+    "frequency": ["m"]
+  },
+  "can_cpi": {
+    "description": "can_cpi",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "cpi",
+    "region": "Canada",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "CPALCY01CAM661N", "name": "can_cpi" }
+    },
+    "frequency": ["m"]
+  },
+  "nor_cpi": {
+    "description": "nor_cpi",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "cpi",
+    "region": "Norway",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "NORCPIALLMINMEI", "name": "nor_cpi" }
+    },
+    "frequency": ["m"]
+  },
+  "swe_cpi": {
+    "description": "swe_cpi",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "cpi",
+    "region": "Sweden",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "SWECPIALLMINMEI", "name": "swe_cpi" }
+    },
+    "frequency": ["m"]
+  },
+  "pol_cpi": {
+    "description": "pol_cpi",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "cpi",
+    "region": "Poland",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "POLCPIALLMINMEI", "name": "pol_cpi" }
+    },
+    "frequency": ["m"]
+  },
+  "hun_cpi": {
+    "description": "hun_cpi",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "cpi",
+    "region": "Hungary",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "HUNCPIALLMINMEI", "name": "hun_cpi" }
+    },
+    "frequency": ["m"]
+  },
+  "czk_cpi": {
+    "description": "czk_cpi",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "cpi",
+    "region": "Czech Rep.",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "CZECPIALLMINMEI", "name": "czk_cpi" }
+    },
+    "frequency": ["m"]
+  },
+  "zar_cpi": {
+    "description": "zar_cpi",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "cpi",
+    "region": "South Africa",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "ZAFCPIALLMINMEI", "name": "zar_cpi" }
+    },
+    "frequency": ["m"]
+  },
+  "can_3m_rate": {
+    "description": "can_3m_rate",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Interest Rates",
+    "region": "Canada",
+    "source": {
+      "name": "fred",
+      "kwargs": { "code": "IR3TIB01CAM156N", "name": "can_3m_rate" }
+    },
+    "frequency": ["m"]
+  },
+  "us_durable_goods_new_orders": {
+    "description": "us_durable_goods_new_orders",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "US",
+    "source": {
+      "name": "census",
+      "kwargs": {
+        "programCode": "M3ADV",
+        "categoryCode": "MDM",
+        "dataTypeCode": "NO",
+        "name": "us_durable_goods_new_orders"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "us_durable_goods_shipments": {
+    "description": "us_durable_goods_shipments",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "US",
+    "source": {
+      "name": "census",
+      "kwargs": {
+        "programCode": "M3ADV",
+        "categoryCode": "MDM",
+        "dataTypeCode": "VS",
+        "name": "us_durable_goods_shipments"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "us_retail_sales": {
+    "description": "us_retail_sales",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "US",
+    "source": {
+      "name": "census",
+      "kwargs": {
+        "programCode": "MRTS",
+        "categoryCode": "44X72",
+        "dataTypeCode": "SM",
+        "name": "us_retail_sales"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "us_new_home_sales": {
+    "description": "us_new_home_sales",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "housing",
+    "region": "US",
+    "source": {
+      "name": "census",
+      "kwargs": {
+        "programCode": "RESSALES",
+        "categoryCode": "ASOLD",
+        "dataTypeCode": "TOTAL",
+        "name": "us_new_home_sales"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "us_housing_starts": {
+    "description": "us_housing_starts",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "housing",
+    "region": "US",
+    "source": {
+      "name": "census",
+      "kwargs": {
+        "programCode": "RESCONST",
+        "categoryCode": "ASTARTS",
+        "dataTypeCode": "TOTAL",
+        "name": "us_housing_starts"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "us_external_balance": {
+    "description": "us_external_balance",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "US",
+    "source": {
+      "name": "census",
+      "kwargs": {
+        "programCode": "FTD",
+        "categoryCode": "BOPGS",
+        "dataTypeCode": "BAL",
+        "name": "us_external_balance"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "us_pers_spending": {
+    "description": "us_pers_spending",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "US",
+    "source": {
+      "name": "bea",
+      "kwargs": {
+        "DataSetName": "NIUnderlyingDetail",
+        "TableName": "U20306",
+        "name": "us_pers_spending"
+      }
+    },
+    "frequency": ["q"]
+  },
+  "us_gdp": {
+    "description": "US GDP QoQ",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "US",
+    "source": {
+      "name": "bea",
+      "kwargs": {
+        "DataSetName": "NIPA",
+        "TableName": "T10101",
+        "name": "us_GDP"
+      }
+    },
+    "frequency": ["q"]
+  },
+  "us_pce": {
+    "description": "US PCE QoQ",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Inflation",
+    "region": "US",
+    "source": {
+      "name": "bea",
+      "kwargs": {
+        "DataSetName": "NIUnderlyingDetail",
+        "TableName": "U20304",
+        "name": "us_pce"
+      }
+    },
+    "frequency": ["q"]
+  },
+  "us_ip_sa": {
+    "description": "us_ip_sa",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "US",
+    "source": {
+      "name": "fed",
+      "kwargs": {
+        "usecols": [0, 1],
+        "colNames": ["us_ip_sa"],
+        "name": "us_ip_sa"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "cons_inflation": {
+    "description": "UK Cpi Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "cpi",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "url": "uri=/economy/inflationandpriceindices/datasets/consumerpriceindices/current/mm23.xlsx",
+        "sheet_name": "data",
+        "skiprows": 7,
+        "header": [],
+        "usecols": [0, 27],
+        "colNames": ["uk_cpi"]
+      }
+    },
+    "frequency": ["m"]
+  },
+  "retail_sales": {
+    "description": "UK Retail Sales Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "url": "uri=/businessindustryandtrade/retailindustry/datasets/retailsalesindexreferencetables/current/mainreferencetables.xlsx",
+        "sheet_name": "KPSA",
+        "skiprows": 8,
+        "header": [],
+        "usecols": [0, 1, 2, 3, 4],
+        "colNames": [
+          "uk_retail_sales_sa",
+          "uk_retail_sales_exfuel_sa",
+          "uk_retail_sales_food_sa",
+          "uk_retail_sales_exfood_sa"
+        ]
+      }
+    },
+    "frequency": ["m"]
+  },
+  "production": {
+    "description": "UK Production Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "url": "uri=/economy/grossdomesticproductgdp/datasets/gdpmonthlyestimateuktimeseriesdataset/current/mgdp.xlsx",
+        "sheet_name": "data",
+        "header": [0],
+        "skiprows": 7,
+        "usecols": [0, 22, 52, 69],
+        "colNames": ["uk_industrial_prod", "uk_gdp", "uk_manuf_prod"]
+      }
+    },
+    "frequency": ["m"]
+  },
+  "trade": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "url": "uri=/economy/nationalaccounts/balanceofpayments/datasets/tradeingoodsmretsallbopeu2013timeseriesspreadsheet/current/mret.xlsx",
+        "sheet_name": "data",
+        "header": [0],
+        "skiprows": 7,
+        "usecols": [0, 314],
+        "colNames": ["uk_trade_balance"]
+      }
+    },
+    "frequency": ["m"]
+  },
+  "eu_ind_conf": {
+    "description": "EU Industry Confidence",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "EU",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "ei_bsin_m_r2",
+        "filter": "/M.BS-ICI.SA.BAL.EU27_2020",
+        "name": "eu_ind_conf"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "de_ind_conf": {
+    "description": "Germany Industry Confidence",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "DE",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "ei_bsin_m_r2",
+        "filter": "/M.BS-ICI.SA.BAL.DE",
+        "name": "de_ind_conf"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "fr_ind_conf": {
+    "description": "France Industry Confidence",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "FR",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "ei_bsin_m_r2",
+        "filter": "/M.BS-ICI.SA.BAL.FR",
+        "name": "fr_ind_conf"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "uk_ind_conf": {
+    "description": "UK Industry Confidence",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "UK",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "ei_bsin_m_r2",
+        "filter": "/M.BS-ICI.SA.BAL.UK",
+        "name": "uk_ind_conf"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "eu_ca": {
+    "description": "EU Current Account",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "EU",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "ei_bpm6ca_m",
+        "filter": "/M.MIO_EUR.CA.S1.S1.BAL.EXT_EU27_2020.NSA.EU27_2020",
+        "name": "eu_ca"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "de_ca": {
+    "description": "Germany Current Account",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "DE",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "ei_bpm6ca_m",
+        "filter": "/M.MIO_EUR.CA.S1.S1.BAL.WRL_REST.NSA.DE",
+        "name": "de_ca"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "fr_ca": {
+    "description": "France Current Account",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "FR",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "ei_bpm6ca_m",
+        "filter": "/M.MIO_EUR.CA.S1.S1.BAL.WRL_REST.NSA.FR",
+        "name": "fr_ca"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "uk_ca": {
+    "description": "UK Current Account",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "ei_bpm6ca_m",
+        "filter": "/M.MIO_EUR.CA.S1.S1.BAL.WRL_REST.NSA.UK",
+        "name": "uk_ca"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "eu_ind_prod": {
+    "description": "EU Industrial Production",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "EU",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "STS_INPR_M",
+        "filter": "/M.PROD.B-D.SCA.I15.EU27_2020",
+        "name": "eu_ind_prod"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "de_ind_prod": {
+    "description": "Germany Industrial Production",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "DE",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "STS_INPR_M",
+        "filter": "/M.PROD.B-D.SCA.I15.DE",
+        "name": "de_ind_prod"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "fr_ind_prod": {
+    "description": "France Industrial Production",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "FR",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "STS_INPR_M",
+        "filter": "/M.PROD.B-D.SCA.I15.FR",
+        "name": "fr_ind_prod"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "uk_ind_prod": {
+    "description": "UK Industrial Production",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "UK",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "STS_INPR_M",
+        "filter": "/M.PROD.B-D.SCA.I15.UK",
+        "name": "uk_ind_prod"
+      }
+    },
+    "frequency": ["m"]
+  },
+  "us_adp": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "us_adp" } },
+    "frequency": ["m"]
+  },
+  "us_ism_manufacturing": {
+    "description": "US ISM Manufacturing",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "US",
+    "unit": "index",
+    "source": {
+      "name": "manual",
+      "kwargs": { "code": "us_ism_manufacturing" }
+    },
+    "frequency": ["m"]
+  },
+  "us_ism_new_orders": {
+    "name": "US ISM New Orders",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "us_ism_new_orders" } },
+    "frequency": ["m"]
+  },
+  "us_ism_employment": {
+    "name": "US ISM Employment",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "us_ism_employment" } },
+    "frequency": ["m"]
+  },
+  "us_mortgage_30y": {
+    "name": "US Mortage Rate 30y",
+    "asset_class": [],
+    "sub_asset_class": "interest rates",
+    "region": "US",
+    "unit": "percentage",
+    "source": { "name": "manual", "kwargs": { "code": "us_mortgage_30y" } },
+    "frequency": ["m"]
+  },
+  "us_mortgage_15y": {
+    "name": "US Mortage Rate 15y",
+    "asset_class": [],
+    "sub_asset_class": "interest rates",
+    "region": "US",
+    "unit": "percentage",
+    "source": { "name": "manual", "kwargs": { "code": "us_mortgage_15y" } },
+    "frequency": ["m"]
+  },
+  "us_NFIB_index": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "us_NFIB_index" } },
+    "frequency": ["m"]
+  },
+  "us_NFIB_plans_inc_empl": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "US",
+    "unit": "index",
+    "source": {
+      "name": "manual",
+      "kwargs": { "code": "us_NFIB_plans_inc_empl" }
+    },
+    "frequency": ["m"]
+  },
+  "us_NFIB_plan_cap_outlays": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "US",
+    "unit": "index",
+    "source": {
+      "name": "manual",
+      "kwargs": { "code": "us_NFIB_plan_cap_outlays" }
+    },
+    "frequency": ["m"]
+  },
+  "us_NFIB_plan_inventories": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "US",
+    "unit": "index",
+    "source": {
+      "name": "manual",
+      "kwargs": { "code": "us_NFIB_plan_inventories" }
+    },
+    "frequency": ["m"]
+  },
+  "us_NFIB_economy": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "us_NFIB_economy" } },
+    "frequency": ["m"]
+  },
+  "us_NFIB_price_plan": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "us_NFIB_price_plan" } },
+    "frequency": ["m"]
+  },
+  "zew_confidence": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": [],
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "zew_confidence" } },
+    "frequency": ["m"]
+  },
+  "zew_situation": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": [],
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "zew_situation" } },
+    "frequency": ["m"]
+  },
+  "eu_hicp": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "cpi",
+    "region": "EU",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "eu_hicp" } },
+    "frequency": ["m"]
+  },
+  "eu_ip": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "EU",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "eu_ip" } },
+    "frequency": ["m"]
+  },
+  "eu_pmi_manuf": {
+    "name": "EU PMI Manufacturing",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "EU",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "eu_pmi_manuf" } },
+    "frequency": ["m"]
+  },
+  "uk_rs_ex_fuel": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "UK",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "uk_rs_ex_fuel" } },
+    "frequency": ["m"]
+  },
+  "uk_employment": {
+    "name": [],
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "UK",
+    "unit": "people",
+    "source": { "name": "manual", "kwargs": { "code": "uk_employment" } },
+    "frequency": ["m"]
+  },
+  "uk_unemployment": {
+    "name": [],
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "UK",
+    "unit": "percentage",
+    "source": { "name": "manual", "kwargs": { "code": "uk_unemployment" } },
+    "frequency": ["m"]
+  },
+  "uk_pmi_composite": {
+    "name": "UK PMI Composite",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "UK",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "uk_pmi_composite" } },
+    "frequency": ["m"]
+  },
+  "uk_pmi_services": {
+    "name": "UK PMI Composite",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "UK",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "uk_pmi_services" } },
+    "frequency": ["m"]
+  },
+  "uk_pmi_manuf": {
+    "name": "UK PMI Manufacturing",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "UK",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "uk_pmi_manuf" } },
+    "frequency": ["m"]
+  },
+  "uk_pmi_const": {
+    "name": "UK PMI Construction",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "UK",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "uk_pmi_const" } },
+    "frequency": ["m"]
+  },
+  "bra_cpi": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "cpi",
+    "region": "Brazil",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "bra_cpi" } },
+    "frequency": ["m"]
+  },
+  "bra_ppi_igpm": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "ppi",
+    "region": "Brazil",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "bra_ppi_igpm" } },
+    "frequency": ["m"]
+  },
+  "bra_ppi_igpdi": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "ppi_others",
+    "region": "Brazil",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "bra_ppi_igpdi" } },
+    "frequency": ["m"]
+  },
+  "bra_ppi_igp10": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "ppi_others",
+    "region": "Brazil",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "bra_ppi_igp10" } },
+    "frequency": ["m"]
+  },
+  "bra_business_confidence_sa": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": {
+      "name": "manual",
+      "kwargs": { "code": "bra_business_confidence_sa" }
+    },
+    "frequency": ["m"]
+  },
+  "bra_business_situation_sa": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": {
+      "name": "manual",
+      "kwargs": { "code": "bra_business_situation_sa" }
+    },
+    "frequency": ["m"]
+  },
+  "bra_business_expectations_sa": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": {
+      "name": "manual",
+      "kwargs": { "code": "bra_business_expectations_sa" }
+    },
+    "frequency": ["m"]
+  },
+  "bra_ppi_incc": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "ppi_others",
+    "region": "Brazil",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "bra_ppi_incc" } },
+    "frequency": ["m"]
+  },
+  "bra_uncertainty": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "bra_uncertainty" } },
+    "frequency": ["m"]
+  },
+  "bra_uncertainty_media": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "Sentiment",
+    "region": "Brazil",
+    "unit": "index",
+    "source": {
+      "name": "manual",
+      "kwargs": { "code": "bra_uncertainty_media" }
+    },
+    "frequency": ["m"]
+  },
+  "bra_uncertainty_expectations": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "Sentiment",
+    "region": "Brazil",
+    "unit": "index",
+    "source": {
+      "name": "manual",
+      "kwargs": { "code": "bra_uncertainty_expectations" }
+    },
+    "frequency": ["m"]
+  },
+  "bra_employment_leading_fgv": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "empl_others",
+    "region": "Brazil",
+    "unit": "index",
+    "source": {
+      "name": "manual",
+      "kwargs": { "code": "bra_employment_leading_fgv" }
+    },
+    "frequency": ["m"]
+  },
+  "bra_gdp_fgv": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "bra_gdp_fgv" } },
+    "frequency": ["m"]
+  },
+  "bra_ip": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "Sentiment",
+    "region": "Brazil",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "bra_ip" } },
+    "frequency": ["m"]
+  },
+  "bra_industry": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "bra_industry" } },
+    "frequency": ["m"]
+  },
+  "bra_extrativist": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "bra_extrativist" } },
+    "frequency": ["m"]
+  },
+  "bra_retail_sales": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "bra_retail_sales" } },
+    "frequency": ["m"]
+  },
+  "bra_exports": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "external_accounts",
+    "region": "Brazil",
+    "unit": "US$ Millions",
+    "source": { "name": "manual", "kwargs": { "code": "bra_exports" } },
+    "frequency": ["m"]
+  },
+  "bra_imports": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "external_accounts",
+    "region": "Brazil",
+    "unit": "US$ Millions",
+    "source": { "name": "manual", "kwargs": { "code": "bra_imports" } },
+    "frequency": ["m"]
+  },
+  "zinc_fut": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "Metals",
+    "region": [],
+    "unit": "US$/",
+    "source": { "name": "manual", "kwargs": { "code": "zinc_fut" } },
+    "frequency": ["m"]
+  },
+  "nickel_fut": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "Metals",
+    "region": [],
+    "unit": "US$/",
+    "source": { "name": "manual", "kwargs": { "code": "nickel_fut" } },
+    "frequency": ["m"]
+  },
+  "ironOre_fut": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "Metals",
+    "region": [],
+    "unit": "US$/",
+    "source": { "name": "manual", "kwargs": { "code": "ironOre_fut" } },
+    "frequency": ["m"]
+  },
+  "cny_new_loans": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "Monetary",
+    "region": "China",
+    "unit": "RMB 100 Millions",
+    "source": { "name": "manual", "kwargs": { "code": "cny_new_loans" } },
+    "frequency": ["m"]
+  },
+  "cny_total_reserves": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "external_accounts",
+    "region": "China",
+    "unit": "US$ Millions",
+    "source": { "name": "manual", "kwargs": { "code": "cny_total_reserves" } },
+    "frequency": ["m"]
+  },
+  "cny_gold_reserves": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "external_accounts",
+    "region": "China",
+    "unit": "US$ Millions",
+    "source": { "name": "manual", "kwargs": { "code": "cny_gold_reserves" } },
+    "frequency": ["m"]
+  },
+  "cny_m1": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "Monetary",
+    "region": "China",
+    "unit": "RMB 100 Millions",
+    "source": { "name": "manual", "kwargs": { "code": "cny_m1" } },
+    "frequency": ["m"]
+  },
+  "cny_m2": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "Monetary",
+    "region": "China",
+    "unit": "RMB 100 Millions",
+    "source": { "name": "manual", "kwargs": { "code": "cny_m2" } },
+    "frequency": ["m"]
+  },
+  "cny_st_rate": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "interest rates",
+    "region": "China",
+    "unit": "percentage",
+    "source": { "name": "manual", "kwargs": { "code": "cny_st_rate" } },
+    "frequency": ["m"]
+  },
+  "cny_1y_rate": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "interest rates",
+    "region": "China",
+    "unit": "percentage",
+    "source": { "name": "manual", "kwargs": { "code": "cny_1y_rate" } },
+    "frequency": ["m"]
+  },
+  "cny_5y_rate": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "interest rates",
+    "region": "China",
+    "unit": "percentage",
+    "source": { "name": "manual", "kwargs": { "code": "cny_5y_rate" } },
+    "frequency": ["m"]
+  },
+  "cny_10y_rate": {
+    "name": [],
+    "asset_class": [],
+    "sub_asset_class": "interest rates",
+    "region": "China",
+    "unit": "percentage",
+    "source": { "name": "manual", "kwargs": { "code": "cny_10y_rate" } },
+    "frequency": ["m"]
+  },
+  "cny_pmi": {
+    "name": "China PMI Index",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "China",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "cny_pmi" } },
+    "frequency": ["m"]
+  },
+  "cny_pmi_production": {
+    "name": "China PMI Production Index",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "China",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "cny_pmi_production" } },
+    "frequency": ["m"]
+  },
+  "cny_pmi_new_orders": {
+    "name": "China PMI New Orders Index",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "China",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "cny_pmi_new_orders" } },
+    "frequency": ["m"]
+  },
+  "cny_pmi_exports": {
+    "name": "China PMI Exports Index",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "China",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "cny_pmi_exports" } },
+    "frequency": ["m"]
+  },
+  "cny_pmi_inventory": {
+    "name": "China PMI Inventory Index",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "China",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "cny_pmi_inventory" } },
+    "frequency": ["m"]
+  },
+  "cny_pmi_imports": {
+    "name": "China PMI Imports Index",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "China",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "cny_pmi_imports" } },
+    "frequency": ["m"]
+  },
+  "cny_exports": {
+    "name": "China Exports Value",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "China",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "cny_exports" } },
+    "frequency": ["m"]
+  },
+  "cny_imports": {
+    "name": "China Imports Value",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "China",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "cny_imports" } },
+    "frequency": ["m"]
+  },
+  "cny_trade_balance": {
+    "name": "China Trade Balance",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "China",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "cny_trade_balance" } },
+    "frequency": ["m"]
+  },
+  "cny_coal_output": {
+    "name": "China Coal Output",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "China",
+    "unit": "10000tons",
+    "source": { "name": "manual", "kwargs": { "code": "cny_coal_output" } },
+    "frequency": ["m"]
+  },
+  "cny_oil_output": {
+    "name": "China Oil Output",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "China",
+    "unit": "10000tons",
+    "source": { "name": "manual", "kwargs": { "code": "cny_oil_output" } },
+    "frequency": ["m"]
+  },
+  "cny_ng_output": {
+    "name": "China Natural Gas Output",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "China",
+    "unit": "100mln cu.m",
+    "source": { "name": "manual", "kwargs": { "code": "cny_ng_output" } },
+    "frequency": ["m"]
+  },
+  "cny_ip": {
+    "name": "China Industrial Production",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "China",
+    "unit": "YoY",
+    "source": { "name": "manual", "kwargs": { "code": "cny_ip" } },
+    "frequency": ["m"]
+  },
+  "can_rates": {
+    "name": "Canada Rates",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "interest rates",
+    "region": "Canada",
+    "unit": "percentage",
+    "source": {
+      "name": "can",
+      "kwargs": { "cols": ["can_2y_rate", "can_5y_rate", "can_10y_rate"] }
+    },
+    "frequency": ["d", "m"]
+  },
+  "philly_fed": {
+    "name": "Philly Fed Data",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "US",
+    "unit": "index",
+    "source": {
+      "name": "philly",
+      "kwargs": {
+        "mapping": {
+          "GAC": "Current Activity Index",
+          "NOC": "Current New Orders",
+          "SHC": "Current Shipments",
+          "UOC": "Current Unfilled Orders",
+          "DTC": "Current Delivery Time",
+          "IVC": "Current Inventories",
+          "PPC": "Current Prices Paid",
+          "PRC": "Current Prices Received",
+          "NEC": "Current Employment",
+          "AWC": "Current Average Workweek",
+          "GAF": "Future Activity Index",
+          "NOF": "Future New Orders",
+          "SHF": "Future Shipments",
+          "UOF": "Future Unfilled Orders",
+          "DTF": "Future Delivery Time",
+          "IVF": "Future Inventories",
+          "PPF": "Future Prices Paid",
+          "PRF": "Future Prices Received",
+          "NEF": "Future Employment",
+          "AWF": "Future Average Workweek",
+          "CEF": "Future Capital Expenditures"
+        }
+      }
+    },
+    "frequency": ["m"]
+  },
+  "bcb_data": {
+    "name": "Brazilian Central Bank",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": {
+      "name": "bcb",
+      "kwargs": {
+        "mapping": {
+          "433": "bra_ipca_MoM",
+          "3546": "bra_reserves",
+          "4513": "bra_net_debt_to_gdp",
+          "21082": "bra_deliquency",
+          "22704": "bra_trade_balance",
+          "22865": "bra_fdi",
+          "22885": "bra_fdi2",
+          "24369": "bra_unemployment_rate",
+          "27840": "bra_m1",
+          "28763": "bra_employment"
+        }
+      }
+    },
+    "frequency": ["m"]
+  }
+}
