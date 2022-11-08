@@ -44,6 +44,14 @@ def EoMonth(date) :
     next_month_date = dt(_y, _m, 1).date()
     return (next_month_date - CDay(1)).date()
 
+def EoXMonth(date, x) :
+    _m = (date.month + x + 1) % 12
+    if _m == 0: _m = 12
+    _y = date.year + int((date.month + x) / 12)
+        
+    _date = dt(_y, _m, 1).date()
+    return (_date - CDay(1)).date()
+
 def quarterDate(quarter:str) :
     year = int(quarter[:4])
     month = int(quarter[-1]) * 3

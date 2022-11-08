@@ -16,7 +16,7 @@ from datetime import timedelta as td
 
 sys.path.append(os.getcwd() + '/..')
 from _aux.constants import DATES, API_KEYS, SOURCES
-from _aux.dateFunctions import isMonthEnd, EoMonth, eDate, quarterDate
+from _aux.dateFunctions import isMonthEnd, EoMonth, EoXMonth, eDate, quarterDate
 from _aux.auxFunctions import endog
 
 class database() :
@@ -27,7 +27,7 @@ class database() :
         
         _start_dt = DATES['start_dt'] if freq == 1 else DATES['q_start_dt']
         
-        self.index = [EoMonth(eDate(_start_dt, x)) for x in range(0, 360, freq)]
+        self.index = [EoXMonth(_start_dt, x) for x in range(0, 360, freq)]
         self.data = pd.DataFrame(index = self.index)
         self.add_items(i_var)
             

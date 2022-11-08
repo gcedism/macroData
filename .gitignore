@@ -3,3 +3,10 @@ README.ipynb
 __pycache__
 .ipynb_checkpoints
 .DS_Store
+
+
+# Temporary stuff
+monthtly_database.csv
+temp.csv
+temp.xls
+Tests.ipynb
