@@ -13,7 +13,7 @@ from matplotlib.colors import ListedColormap
 
 from .dateFunctions import first_day
 
-endog = pd.read_csv('../_data/endogenous.csv', index_col = 0, encoding = 'UTF-8')
+endog = pd.read_csv('_data/manual.csv', index_col = 0, encoding = 'UTF-8')
 endog.index = endog.index.map(lambda x : dt.strptime(x, '%d.%m.%y').date())
 
 params = {
