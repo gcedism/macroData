@@ -283,10 +283,10 @@ class database() :
         
             _data = df.pivot_table(values = 'OBS_VALUE', index = 'TIME_PERIOD', columns = 'geo', aggfunc = np.sum)
             _data.columns = [tic['name']]
+            _data.index = _data.index.map(lambda x : EoMonth(dt.strptime(x, '%Y-%m').date()))
             data.append(_data)
         
         final = data[0].join(data[1:], how = 'outer')
-        final.index = self.index[:final.shape[0]]
     
         return final 
     
