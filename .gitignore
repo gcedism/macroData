@@ -1,12 +1,15 @@
-# Main
-README.ipynb
+# Main Stuff
 __pycache__
 .ipynb_checkpoints
 .DS_Store
 
-
 # Temporary stuff
-monthtly_database.csv
 temp.csv
 temp.xls
 Tests.ipynb
+
+# Private Stuff
+monthly_database.csv
+constants_private.py
+README.ipynb
+REFERENCES.ipynb

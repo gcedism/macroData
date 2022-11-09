@@ -15,19 +15,33 @@ from datetime import timedelta as td
 
 
 sys.path.append(os.getcwd() + '/..')
-from _aux.constants import DATES, API_KEYS, SOURCES
-from _aux.dateFunctions import isMonthEnd, EoMonth, EoXMonth, eDate, quarterDate
+from _aux.constants import DATES, SOURCES
+from _aux.constants_private import API_KEYS
+from _aux.dateFunctions import isMonthEnd, EoXMonth, eDate, quarterDate
 from _aux.auxFunctions import endog
 
 class database() :
     
-    def __init__(self, i_var:dict, freq:int) :
+    def __init__(self, i_var:dict, freq:str) :
         self.freq = freq
         self.var:dict = {}
         
-        _start_dt = DATES['start_dt'] if freq == 1 else DATES['q_start_dt']
+        if freq == 'm' :
+            self.start = DATES['m_start']
+            self.start_dt = DATES['m_start_dt']
+            self.index = [EoXMonth(self.start_dt, x) for x in range(0, 360, 1)]
+        elif freq == 'd' :
+            self.start = DATES['d_start']
+            self.start_dt = DATES['d_start_dt']
+            self.index = [self.start_dt + CDay(x) for x in range(504)]
+        elif freq == 'q' :
+            self.start = DATES['q_start']
+            self.start_dt = DATES['q_start_dt']
+            self.index = [EoXMonth(self.start_dt, x) for x in range(0, 360, 3)]
         
-        self.index = [EoXMonth(_start_dt, x) for x in range(0, 360, freq)]
+        self.end = DATES['end']
+        self.end_dt = DATES['end_dt']
+                      
         self.data = pd.DataFrame(index = self.index)
         self.add_items(i_var)
             
@@ -39,23 +53,28 @@ class database() :
             if _items != [] :
                 new_data = getattr(self, '_get_'+ source)(_items)
                 self.data = self.data.join(new_data, how = 'outer')
+                
+        self.data = (self.data.replace(',' , '' ,  regex=True)
+                              .replace(' - ' , np.nan ,  regex=True)
+                              .astype(float)
+                              .interpolate(limit_area = 'inside'))
     
     def _get_yahoo(self, kwargs:dict) :
         print('Retrieving data from Yahoo Finance...')
         tickers = [x['code'] for x in kwargs]     
         y_params = {
             'tickers' : tickers,
-            'start' : DATES['start'],
-            'end' : DATES['end'],
+            'start' : self.start,
+            'end' : self.end,
             'interval' : '1d'
         }
         _data = yf.download(**y_params)
         _data = _data['Adj Close']
         _data.index = [x.date() for x in _data.index]
-        if self.freq == 1 :
-            _data = _data.loc[_data.index.map(isMonthEnd)]
-        else :
+        if self.freq == 'd' :
             _data = _data.fillna(method = 'bfill')
+        else :
+            _data = _data.loc[_data.index.map(isMonthEnd)]
             
         # If only one ticker is provided, yf returns a Series with no adjustment on names
         if len(tickers) == 1 :
@@ -226,7 +245,7 @@ class database() :
         open('temp.csv', 'wb').write(s)
         _df = pd.read_csv('temp.csv', index_col = 0)
         _df.columns = _df.columns.map(kwargs[0]['mapping'])
-        _df.index = _df.index.map(lambda x: EoMonth(dt.strptime(x, '%b-%y').date()))
+        _df.index = _df.index.map(lambda x: EoXMonth(dt.strptime(x, '%b-%y').date(), 0))
         
         return _df.loc[[x for x in _df.index if x in self.index]]
     
@@ -252,7 +271,7 @@ class database() :
                 firstRow = 0
             lastRow = [x for x in range(df.shape[0]) if pd.isna(df.index[x])][0] if len([x for x in range(df.shape[0]) if pd.isna(df.index[x])]) > 0 else df.shape[0]
             df = df.iloc[firstRow:lastRow]
-            df.index = [EoMonth(dt.strptime(x, '%Y %b').date()) for x in df.index]
+            df.index = [EoXMonth(dt.strptime(x, '%Y %b').date(), 0) for x in df.index]
             df.loc[df.index >= DATES['start_dt']]
             _data.append(df)
         
@@ -283,7 +302,7 @@ class database() :
         
             _data = df.pivot_table(values = 'OBS_VALUE', index = 'TIME_PERIOD', columns = 'geo', aggfunc = np.sum)
             _data.columns = [tic['name']]
-            _data.index = _data.index.map(lambda x : EoMonth(dt.strptime(x, '%Y-%m').date()))
+            _data.index = _data.index.map(lambda x : EoXMonth(dt.strptime(x, '%Y-%m').date(), 0))
             data.append(_data)
         
         final = data[0].join(data[1:], how = 'outer')
@@ -306,18 +325,38 @@ class database() :
     
         return _data.loc[_alt_index]
     
+    # BRAZILIAN CENTRAL BANK
     def _get_bcb(self, kwargs) : 
         print('Retrieving data from BCB...')
         series = [x for x in kwargs[0]['mapping']]
         wsdl = 'https://www3.bcb.gov.br/sgspub/JSP/sgsgeral/FachadaWSSGS.wsdl'
         client = zeep.Client(wsdl=wsdl)
         a = client.service.getValoresSeriesVO(in0 = series, in1 = DATES['start_2'], in2 = DATES['end_2'])
-        dates = [EoMonth(dt(a[0]['valores'][j]['ano'], a[0]['valores'][j]['mes'], a[0]['valores'][j]['dia']).date()) for j in range(len(a[0]['valores']))]
+        dates = [EoXMonth(dt(a[0]['valores'][j]['ano'], a[0]['valores'][j]['mes'], a[0]['valores'][j]['dia']).date(), 0) for j in range(len(a[0]['valores']))]
         
         _data = pd.DataFrame([[a[i]['valores'][j]['svalor']['_value_1'] for j in range(len(dates))] for i in range(len(a))]).T
         _data.index = dates
         _data.columns = [kwargs[0]['mapping'][x] for x in series]
         
+        return _data
+    
+    #MEXICO NATIONAL INSTITUTE DE ESTATISTICA
+    def _get_inegi(self, kwargs) :
+        _data = []
+        p = {
+            'type' : 'json'    
+        }
+    
+        for x in kwargs : 
+            url = 'http://en.www.inegi.org.mx/app/api/indicadores/desarrolladores/jsonxml/INDICATOR/' + x['id'] + '/en/0700/false/' + x['fuente'] + '/2.0/' + API_KEYS['INEGI_API_KEY']
+            s = requests.get(url, p).text
+            _d = pd.DataFrame(json.loads(s)['Series'][0]['OBSERVATIONS']).set_index('TIME_PERIOD')
+            _d.index = _d.index.map(lambda x : EoXMonth(dt.strptime(x, '%Y/%m').date(), 0))
+            _d = _d.loc[_d.index >= self.start_dt].sort_index()['OBS_VALUE']
+            _d.name = x['name']
+            _data.append(pd.DataFrame(_d))
+    
+        _data = _data[0].join(_data[1:], how = 'outer')
         return _data
     
     def _get_manual(self, kwargs) :

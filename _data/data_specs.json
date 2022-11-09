@@ -5,7 +5,8 @@
     "sub_asset_class": "Corporate Bonds",
     "region": "US",
     "source": { "name": "yahoo", "kwargs": { "code": "CORP", "name": "CORP" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "LQD": {
     "description": "iShares iBoxx $ Invmt Grade Corp Bd ETF ",
@@ -13,7 +14,8 @@
     "sub_asset_class": "IG Corporate Bonds",
     "region": "Global",
     "source": { "name": "yahoo", "kwargs": { "code": "LQD", "name": "LQD" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "HYG": {
     "description": "iShares iBoxx USD High Yield Corporate Bond ETF",
@@ -21,7 +23,8 @@
     "sub_asset_class": "High Yield Corporate Bonds",
     "region": "Global",
     "source": { "name": "yahoo", "kwargs": { "code": "HYG", "name": "HYG" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "GOVT": {
     "description": "iShares US Treasury Bond ETF",
@@ -29,7 +32,8 @@
     "sub_asset_class": "Government Bonds",
     "region": "US",
     "source": { "name": "yahoo", "kwargs": { "code": "GOVT", "name": "GOVT" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "IGOV": {
     "description": "iShares International Treasury Bond ETF",
@@ -37,7 +41,8 @@
     "sub_asset_class": "Government Bonds",
     "region": "Global",
     "source": { "name": "yahoo", "kwargs": { "code": "IGOV", "name": "IGOV" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "EMB": {
     "description": "iShares JPMorgan USD Emerging Markets Bond ETF",
@@ -45,7 +50,8 @@
     "sub_asset_class": "Government Bonds",
     "region": "EM",
     "source": { "name": "yahoo", "kwargs": { "code": "EMB", "name": "EMB" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "CEMB": {
     "description": "iShares J.P. Morgan EM Corporate Bond ETF",
@@ -53,7 +59,8 @@
     "sub_asset_class": "Corporate Bonds",
     "region": "EM",
     "source": { "name": "yahoo", "kwargs": { "code": "CEMB", "name": "CEMB" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "EMLC": {
     "description": "Market Vectors Emerging Markets Local Currency Bond ETF",
@@ -61,7 +68,8 @@
     "sub_asset_class": "Government Local Currency Bonds",
     "region": "EM",
     "source": { "name": "yahoo", "kwargs": { "code": "EMLC", "name": "EMLC" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "dxy": {
     "description": "US Dollar/USDX - Index - Cash",
@@ -72,7 +80,8 @@
       "name": "yahoo",
       "kwargs": { "code": "DX-Y.NYB", "name": "DX-Y.NYB" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "SPY": {
     "description": "SPDR S&P 500 ETF",
@@ -80,7 +89,8 @@
     "sub_asset_class": "Broad Market",
     "region": "US",
     "source": { "name": "yahoo", "kwargs": { "code": "SPY", "name": "SPY" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "IYM": {
     "description": "iShares U.S. Basic Materials ETF",
@@ -88,7 +98,8 @@
     "sub_asset_class": "Basic Materials",
     "region": "US",
     "source": { "name": "yahoo", "kwargs": { "code": "IYM", "name": "IYM" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "IXP": {
     "description": "iShares Global Comm Services ETF",
@@ -96,7 +107,8 @@
     "sub_asset_class": "Communications",
     "region": "Global",
     "source": { "name": "yahoo", "kwargs": { "code": "IXP", "name": "IXP" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "IYC": {
     "description": "iShares US Consumer Discretionary ETF",
@@ -104,7 +116,8 @@
     "sub_asset_class": "Consumer Discretionary",
     "region": "Global",
     "source": { "name": "yahoo", "kwargs": { "code": "IYC", "name": "IYC" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "IYK": {
     "description": "iShares US Consumer Staples ETF",
@@ -112,7 +125,8 @@
     "sub_asset_class": "Consumer Staples",
     "region": "Global",
     "source": { "name": "yahoo", "kwargs": { "code": "IYK", "name": "IYK" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "IYE": {
     "description": "iShares U.S. Energy ETF",
@@ -120,7 +134,8 @@
     "sub_asset_class": "Energy",
     "region": "Global",
     "source": { "name": "yahoo", "kwargs": { "code": "IYE", "name": "IYE" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "IYF": {
     "description": "iShares U.S. Financials ETF",
@@ -128,7 +143,8 @@
     "sub_asset_class": "Financials",
     "region": "Global",
     "source": { "name": "yahoo", "kwargs": { "code": "IYF", "name": "IYF" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "IYH": {
     "description": "iShares U.S. Healthcare ETF",
@@ -136,7 +152,8 @@
     "sub_asset_class": "Healthcare",
     "region": "Global",
     "source": { "name": "yahoo", "kwargs": { "code": "IYH", "name": "IYH" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "IYJ": {
     "description": "iShares U.S. Industrials ETF",
@@ -144,7 +161,8 @@
     "sub_asset_class": "industrials",
     "region": "Global",
     "source": { "name": "yahoo", "kwargs": { "code": "IYJ", "name": "IYJ" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "IYR": {
     "description": "iShares U.S. Real Estate ETF",
@@ -152,7 +170,8 @@
     "sub_asset_class": "real estate",
     "region": "Global",
     "source": { "name": "yahoo", "kwargs": { "code": "IYR", "name": "IYR" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "IDU": {
     "description": "iShares U.S. Utilities ETF",
@@ -160,7 +179,8 @@
     "sub_asset_class": "utilities",
     "region": "US",
     "source": { "name": "yahoo", "kwargs": { "code": "IDU", "name": "IDU" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "JXI": {
     "description": "iShares Global Utilities ETF",
@@ -168,7 +188,8 @@
     "sub_asset_class": "utilities",
     "region": "Global",
     "source": { "name": "yahoo", "kwargs": { "code": "JXI", "name": "JXI" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "BBEU": {
     "description": "JPMorgan BetaBuilders Europe ETF",
@@ -176,7 +197,8 @@
     "sub_asset_class": "ETF",
     "region": "Global",
     "source": { "name": "yahoo", "kwargs": { "code": "BBEU", "name": "BBEU" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "EZU": {
     "description": "iShares MSCI Eurozone ETF",
@@ -184,7 +206,8 @@
     "sub_asset_class": "equities",
     "region": "Global",
     "source": { "name": "yahoo", "kwargs": { "code": "EZU", "name": "EZU" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "VGK": {
     "description": "Vanguard European Stock Index Fund",
@@ -192,7 +215,8 @@
     "sub_asset_class": "equities",
     "region": "Global",
     "source": { "name": "yahoo", "kwargs": { "code": "VGK", "name": "VGK" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "EEM": {
     "description": "iShares MSCI Emerging Markets ETF",
@@ -200,7 +224,8 @@
     "sub_asset_class": "equities",
     "region": "emerging markets",
     "source": { "name": "yahoo", "kwargs": { "code": "EEM", "name": "EEM" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "SPTI": {
     "description": "SPDR Intermediary Bonds",
@@ -208,7 +233,8 @@
     "sub_asset_class": "Government Bonds",
     "region": "US",
     "source": { "name": "yahoo", "kwargs": { "code": "SPTI", "name": "SPTI" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "GSG": {
     "description": "commodities_index(s&p_ishares)",
@@ -216,7 +242,8 @@
     "sub_asset_class": "commodities",
     "region": "Global",
     "source": { "name": "yahoo", "kwargs": { "code": "GSG", "name": "GSG" } },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "^GSPC": {
     "description": "S&P 500 Index",
@@ -227,7 +254,8 @@
       "name": "yahoo",
       "kwargs": { "code": "^GSPC", "name": "^GSPC" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "^IRX": {
     "description": "US Treasury 3m",
@@ -238,7 +266,8 @@
       "name": "yahoo",
       "kwargs": { "code": "^IRX", "name": "us_3m_rate" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "^FVX": {
     "description": "US Treasury 5Y",
@@ -249,7 +278,8 @@
       "name": "yahoo",
       "kwargs": { "code": "^FVX", "name": "us_5y_rate" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "^TNX": {
     "description": "US Treasury 10Y",
@@ -260,7 +290,8 @@
       "name": "yahoo",
       "kwargs": { "code": "^TNX", "name": "us_10y_rate" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "^TYX": {
     "description": "US Treasury 30Y",
@@ -271,7 +302,8 @@
       "name": "yahoo",
       "kwargs": { "code": "^TYX", "name": "us_30y_rate" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "^MOVE": {
     "description": "ICE BofAML MOVE Index",
@@ -282,7 +314,8 @@
       "name": "yahoo",
       "kwargs": { "code": "^MOVE", "name": "^MOVE" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "EURUSD=X": {
     "description": "EURUSD",
@@ -293,7 +326,8 @@
       "name": "yahoo",
       "kwargs": { "code": "EURUSD=X", "name": "EURUSD=X" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "GBPUSD=X": {
     "description": "GBPUSD",
@@ -304,7 +338,8 @@
       "name": "yahoo",
       "kwargs": { "code": "GBPUSD=X", "name": "GBPUSD=X" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "CAD=X": {
     "description": "USDCAD",
@@ -315,7 +350,8 @@
       "name": "yahoo",
       "kwargs": { "code": "CAD=X", "name": "CAD=X" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "AUDUSD=X": {
     "description": "AUDUSD",
@@ -326,7 +362,8 @@
       "name": "yahoo",
       "kwargs": { "code": "AUDUSD=X", "name": "AUDUSD=X" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "NZDUSD=X": {
     "description": "NZDUSD",
@@ -337,7 +374,8 @@
       "name": "yahoo",
       "kwargs": { "code": "NZDUSD=X", "name": "NZDUSD=X" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "JPY=X": {
     "description": "USDJPY",
@@ -348,7 +386,8 @@
       "name": "yahoo",
       "kwargs": { "code": "JPY=X", "name": "JPY=X" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "SEK=X": {
     "description": "USDSEK",
@@ -359,7 +398,8 @@
       "name": "yahoo",
       "kwargs": { "code": "SEK=X", "name": "SEK=X" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "NOK=X": {
     "description": "USDNOK",
@@ -370,7 +410,8 @@
       "name": "yahoo",
       "kwargs": { "code": "NOK=X", "name": "NOK=X" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "PLN=X": {
     "description": "USDPLN",
@@ -381,7 +422,8 @@
       "name": "yahoo",
       "kwargs": { "code": "PLN=X", "name": "PLN=X" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "HUF=X": {
     "description": "USDHUF",
@@ -392,7 +434,8 @@
       "name": "yahoo",
       "kwargs": { "code": "HUF=X", "name": "HUF=X" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "CZK=X": {
     "description": "USDCZK",
@@ -403,7 +446,8 @@
       "name": "yahoo",
       "kwargs": { "code": "CZK=X", "name": "CZK=X" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "MXN=X": {
     "description": "USDMXN",
@@ -414,7 +458,8 @@
       "name": "yahoo",
       "kwargs": { "code": "MXN=X", "name": "MXN=X" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "BRL=X": {
     "description": "USDBRL",
@@ -425,7 +470,8 @@
       "name": "yahoo",
       "kwargs": { "code": "BRL=X", "name": "BRL=X" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "ZAR=X": {
     "description": "USDZAR",
@@ -436,7 +482,8 @@
       "name": "yahoo",
       "kwargs": { "code": "ZAR=X", "name": "ZAR=X" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "TRY=X": {
     "description": "USDTRY",
@@ -447,229 +494,332 @@
       "name": "yahoo",
       "kwargs": { "code": "TRY=X", "name": "TRY=X" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "GC=F": {
     "description": "gold_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Metals",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "GC=F", "name": "GC=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "GC=F", "name": "gold_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "SI=F": {
     "description": "silver_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Metals",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "SI=F", "name": "SI=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "SI=F", "name": "silver_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "HG=F": {
     "description": "copper_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Metals",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "HG=F", "name": "HG=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "HG=F", "name": "copper_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "PL=F": {
     "description": "platinum_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Metals",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "PL=F", "name": "PL=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "PL=F", "name": "platinum_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "PA=F": {
     "description": "palladiium_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Metals",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "PA=F", "name": "PA=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "PA=F", "name": "palladiium_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "ALI=F": {
-    "description": "alluminum_fut",
+    "description": "aluminum_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Metals",
     "region": "Global",
     "source": {
       "name": "yahoo",
-      "kwargs": { "code": "ALI=F", "name": "ALI=F" }
+      "kwargs": { "code": "ALI=F", "name": "aluminum_fut" }
     },
-    "frequency": ["d", "m", "q", "a"]
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "CC=F": {
     "description": "coccoa_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Soft",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "CC=F", "name": "CC=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "CC=F", "name": "coccoa_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "KC=F": {
     "description": "coffee_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Soft",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "KC=F", "name": "KC=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "KC=F", "name": "coffee_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "SB=F": {
     "description": "sugar_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Soft",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "SB=F", "name": "SB=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "SB=F", "name": "sugar_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "OJ=F": {
     "description": "orangeJ_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Soft",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "OJ=F", "name": "OJ=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "OJ=F", "name": "orangeJ_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "CT=F": {
     "description": "cotton_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Soft",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "CT=F", "name": "CT=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "CT=F", "name": "cotton_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "GF=F": {
     "description": "feeder_cattle_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Meat",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "GF=F", "name": "GF=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "GF=F", "name": "feeder_cattle_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "HE=F": {
     "description": "lean_hogs_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Meat",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "HE=F", "name": "HE=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "HE=F", "name": "lean_hogs_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "LE=F": {
     "description": "live_cattle_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Meat",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "LE=F", "name": "LE=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "LE=F", "name": "live_cattle_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "DC=F": {
     "description": "milk_classIII_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Meat",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "DC=F", "name": "DC=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "DC=F", "name": "milk_classIII_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "BZ=F": {
     "description": "brent_oil_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Energy",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "BZ=F", "name": "BZ=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "BZ=F", "name": "brent_oil_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "CL=F": {
     "description": "wti_oil_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Energy",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "CL=F", "name": "CL=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "CL=F", "name": "wti_oil_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "RB=F": {
     "description": "gasoline_oil_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Energy",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "RB=F", "name": "RB=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "RB=F", "name": "gasoline_oil_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "HO=F": {
     "description": "heating_oil_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Energy",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "HO=F", "name": "HO=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "HO=F", "name": "heating_oil_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "NG=F": {
     "description": "natural_gas_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Energy",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "NG=F", "name": "NG=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "NG=F", "name": "natural_gas_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "ZW=F": {
     "description": "wheat_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Grains",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "ZW=F", "name": "ZW=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "ZW=F", "name": "wheat_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "ZR=F": {
     "description": "rice_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Grains",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "ZR=F", "name": "ZR=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "ZR=F", "name": "rice_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "ZC=F": {
     "description": "corn_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Grains",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "ZC=F", "name": "ZC=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "ZC=F", "name": "corn_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "ZM=F": {
     "description": "soybean_meal_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Grains",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "ZM=F", "name": "ZM=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "ZM=F", "name": "soybean_meal_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "ZL=F": {
     "description": "soybean_oil_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Grains",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "ZL=F", "name": "ZL=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "ZL=F", "name": "soybean_oil_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "ZS=F": {
     "description": "soybean_fut",
     "asset_class": "Commodities",
     "sub_asset_class": "Grains",
     "region": "Global",
-    "source": { "name": "yahoo", "kwargs": { "code": "ZS=F", "name": "ZS=F" } },
-    "frequency": ["d", "m", "q", "a"]
+    "source": {
+      "name": "yahoo",
+      "kwargs": { "code": "ZS=F", "name": "soybean_fut" }
+    },
+    "frequency": ["d", "m", "q", "a"],
+    "transform": "n"
   },
   "us_cpi": {
     "description": "US CPI Index level",
     "asset_class": "Inflation",
-    "sub_asset_class": "cpi",
+    "sub_asset_class": "Inflation",
     "region": "US",
     "source": {
       "name": "bls",
       "kwargs": { "code": "CUUR0000SA0", "name": "us_cpi" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "us_cpi_core": {
     "description": "US CPI Core Index level",
@@ -680,7 +830,8 @@
       "name": "bls",
       "kwargs": { "code": "CUUR0000SA0L1E", "name": "us_cpi_core" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "us_cpi_food": {
     "description": "US CPI Food Index level",
@@ -691,7 +842,8 @@
       "name": "bls",
       "kwargs": { "code": "CUUR0000SAF1", "name": "us_cpi_food" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "us_cpi_energy": {
     "description": "US CPI Energy Index level",
@@ -702,7 +854,8 @@
       "name": "bls",
       "kwargs": { "code": "CUUR0000SA0E", "name": "us_cpi_energy" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "us_cpi_gasoline": {
     "description": "US CPI Gasoline Index level",
@@ -713,7 +866,8 @@
       "name": "bls",
       "kwargs": { "code": "CUUR0000SETB01", "name": "us_cpi_gasoline" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "us_cpi_medicare": {
     "description": "US CPI Medicare Index level",
@@ -724,7 +878,8 @@
       "name": "bls",
       "kwargs": { "code": "CUUR0000SAM", "name": "us_cpi_medicare" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "us_cpi_shelter": {
     "description": "US CPI Shelter Index level",
@@ -735,7 +890,8 @@
       "name": "bls",
       "kwargs": { "code": "CUUR0000SAH1", "name": "us_cpi_shelter" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "us_cpi_rent_sa": {
     "description": "US CPI Rent Index level",
@@ -746,7 +902,8 @@
       "name": "bls",
       "kwargs": { "code": "CUSR0000SEHA", "name": "us_cpi_rent_sa" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "us_nonfarm_payroll_sa": {
     "description": "US non-farm Payrolls",
@@ -757,7 +914,8 @@
       "name": "bls",
       "kwargs": { "code": "CES0000000001", "name": "us_nonfarm_payroll_sa" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_avg_hour_earn_sa": {
     "description": "US Average Hourly Earnings",
@@ -768,7 +926,8 @@
       "name": "bls",
       "kwargs": { "code": "CES0500000003", "name": "us_avg_hour_earn_sa" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_unemployment": {
     "description": "US Unemployment Rate",
@@ -779,7 +938,8 @@
       "name": "bls",
       "kwargs": { "code": "LNS14000000", "name": "us_unemployment" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_civ_work_compensation": {
     "description": "US Civil Work Compensation",
@@ -793,7 +953,8 @@
         "name": "us_civ_work_compensation"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_civ_work_wages": {
     "description": "US Civil Workers Wages",
@@ -804,7 +965,8 @@
       "name": "bls",
       "kwargs": { "code": "CIU1020000000000A", "name": "us_civ_work_wages" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_civ_work_benefits": {
     "description": "US Civil Work Benefits",
@@ -815,7 +977,8 @@
       "name": "bls",
       "kwargs": { "code": "CIU1030000000000A", "name": "us_civ_work_benefits" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_priv_work_compensation": {
     "description": "US Private Workers Compensation",
@@ -829,7 +992,8 @@
         "name": "us_priv_work_compensation"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_priv_work_wages": {
     "description": "US Private Workers Wages",
@@ -840,7 +1004,8 @@
       "name": "bls",
       "kwargs": { "code": "CIU2020000000000A", "name": "us_priv_work_wages" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_priv_work_benefits": {
     "description": "US Private Workers Benefits",
@@ -851,7 +1016,8 @@
       "name": "bls",
       "kwargs": { "code": "CIU2030000000000A", "name": "us_priv_work_benefits" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_govt_work_compensation": {
     "description": "US Govt Work Compensation",
@@ -865,7 +1031,8 @@
         "name": "us_govt_work_compensation"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_govt_work_wages": {
     "description": "US Government Workers Wages",
@@ -876,7 +1043,8 @@
       "name": "bls",
       "kwargs": { "code": "CIU3020000000000A", "name": "us_govt_work_wages" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_govt_work_benefits": {
     "description": "US Government Workers Benefits",
@@ -887,7 +1055,8 @@
       "name": "bls",
       "kwargs": { "code": "CIU3030000000000A", "name": "us_govt_work_benefits" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_job_openings": {
     "description": "US Job Openings",
@@ -898,7 +1067,8 @@
       "name": "bls",
       "kwargs": { "code": "JTS000000000000000JOL", "name": "us_job_openings" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_M1": {
     "description": "US M1 value",
@@ -906,7 +1076,8 @@
     "sub_asset_class": "Monetary",
     "region": "US",
     "source": { "name": "fred", "kwargs": { "code": "M1SL", "name": "us_M1" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "both"
   },
   "us_michigan_cons_conf": {
     "description": "us_michigan_cons_conf",
@@ -917,7 +1088,8 @@
       "name": "fred",
       "kwargs": { "code": "UMCSENT", "name": "us_michigan_cons_conf" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_IG_spread": {
     "description": "us_IG_spread",
@@ -928,7 +1100,8 @@
       "name": "fred",
       "kwargs": { "code": "BAMLC0A0CM", "name": "us_IG_spread" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_BBB_spread": {
     "description": "us_BBB_spread",
@@ -939,7 +1112,8 @@
       "name": "fred",
       "kwargs": { "code": "BAMLC0A4CBBB", "name": "us_BBB_spread" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_BB_spread": {
     "description": "us_BB_spread",
@@ -950,7 +1124,8 @@
       "name": "fred",
       "kwargs": { "code": "BAMLH0A1HYBB", "name": "us_BB_spread" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_HY_spread": {
     "description": "us_HY_spread",
@@ -961,7 +1136,8 @@
       "name": "fred",
       "kwargs": { "code": "BAMLH0A0HYM2", "name": "us_HY_spread" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_A_spread": {
     "description": "us_A_spread",
@@ -972,7 +1148,8 @@
       "name": "fred",
       "kwargs": { "code": "BAMLC0A3CA", "name": "us_A_spread" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_AA_spread": {
     "description": "us_AA_spread",
@@ -983,7 +1160,8 @@
       "name": "fred",
       "kwargs": { "code": "BAMLC0A2CAA", "name": "us_AA_spread" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_B_spread": {
     "description": "us_B_spread",
@@ -994,7 +1172,8 @@
       "name": "fred",
       "kwargs": { "code": "BAMLH0A2HYB", "name": "us_B_spread" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_EM_spread": {
     "description": "us_EM_spread",
@@ -1005,7 +1184,8 @@
       "name": "fred",
       "kwargs": { "code": "BAMLEMCBPIOAS", "name": "us_EM_spread" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_10y_real_rate": {
     "description": "us_10y_real_rate",
@@ -1016,7 +1196,8 @@
       "name": "fred",
       "kwargs": { "code": "REAINTRATREARAT10Y", "name": "us_10y_real_rate" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_5v5_inflation": {
     "description": "us_5v5_inflation",
@@ -1027,7 +1208,8 @@
       "name": "fred",
       "kwargs": { "code": "T5YIFR", "name": "us_5v5_inflation" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_5y_be_inflation": {
     "description": "us_5y_be_inflation",
@@ -1038,106 +1220,116 @@
       "name": "fred",
       "kwargs": { "code": "T5YIE", "name": "us_5y_be_inflation" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "eu_hcpi": {
     "description": "eu_hcpi",
     "asset_class": "Macroeconomy",
-    "sub_asset_class": "cpi",
+    "sub_asset_class": "Inflation",
     "region": "EU",
     "source": {
       "name": "fred",
       "kwargs": { "code": "CPHPTT01EZM659N", "name": "eu_hcpi" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "eu_hcpi_core": {
     "description": "eu_hcpi_core",
     "asset_class": "Macroeconomy",
-    "sub_asset_class": "cpi_core",
+    "sub_asset_class": "Inflation",
     "region": "EU",
     "source": {
       "name": "fred",
       "kwargs": { "code": "CPHPLA01EZM661N", "name": "eu_hcpi_core" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "can_cpi": {
     "description": "can_cpi",
     "asset_class": "Macroeconomy",
-    "sub_asset_class": "cpi",
+    "sub_asset_class": "Inflation",
     "region": "Canada",
     "source": {
       "name": "fred",
       "kwargs": { "code": "CPALCY01CAM661N", "name": "can_cpi" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "nor_cpi": {
     "description": "nor_cpi",
     "asset_class": "Macroeconomy",
-    "sub_asset_class": "cpi",
+    "sub_asset_class": "Inflation",
     "region": "Norway",
     "source": {
       "name": "fred",
       "kwargs": { "code": "NORCPIALLMINMEI", "name": "nor_cpi" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "swe_cpi": {
     "description": "swe_cpi",
     "asset_class": "Macroeconomy",
-    "sub_asset_class": "cpi",
+    "sub_asset_class": "Inflation",
     "region": "Sweden",
     "source": {
       "name": "fred",
       "kwargs": { "code": "SWECPIALLMINMEI", "name": "swe_cpi" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "pol_cpi": {
     "description": "pol_cpi",
     "asset_class": "Macroeconomy",
-    "sub_asset_class": "cpi",
+    "sub_asset_class": "Inflation",
     "region": "Poland",
     "source": {
       "name": "fred",
       "kwargs": { "code": "POLCPIALLMINMEI", "name": "pol_cpi" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "hun_cpi": {
     "description": "hun_cpi",
     "asset_class": "Macroeconomy",
-    "sub_asset_class": "cpi",
+    "sub_asset_class": "Inflation",
     "region": "Hungary",
     "source": {
       "name": "fred",
       "kwargs": { "code": "HUNCPIALLMINMEI", "name": "hun_cpi" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "czk_cpi": {
     "description": "czk_cpi",
     "asset_class": "Macroeconomy",
-    "sub_asset_class": "cpi",
+    "sub_asset_class": "Inflation",
     "region": "Czech Rep.",
     "source": {
       "name": "fred",
       "kwargs": { "code": "CZECPIALLMINMEI", "name": "czk_cpi" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "zar_cpi": {
     "description": "zar_cpi",
     "asset_class": "Macroeconomy",
-    "sub_asset_class": "cpi",
+    "sub_asset_class": "Inflation",
     "region": "South Africa",
     "source": {
       "name": "fred",
       "kwargs": { "code": "ZAFCPIALLMINMEI", "name": "zar_cpi" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "can_3m_rate": {
     "description": "can_3m_rate",
@@ -1148,7 +1340,8 @@
       "name": "fred",
       "kwargs": { "code": "IR3TIB01CAM156N", "name": "can_3m_rate" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_durable_goods_new_orders": {
     "description": "us_durable_goods_new_orders",
@@ -1164,7 +1357,8 @@
         "name": "us_durable_goods_new_orders"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "us_durable_goods_shipments": {
     "description": "us_durable_goods_shipments",
@@ -1180,7 +1374,8 @@
         "name": "us_durable_goods_shipments"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "us_retail_sales": {
     "description": "us_retail_sales",
@@ -1196,7 +1391,8 @@
         "name": "us_retail_sales"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "us_new_home_sales": {
     "description": "us_new_home_sales",
@@ -1212,7 +1408,8 @@
         "name": "us_new_home_sales"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "us_housing_starts": {
     "description": "us_housing_starts",
@@ -1228,7 +1425,8 @@
         "name": "us_housing_starts"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "us_external_balance": {
     "description": "us_external_balance",
@@ -1244,7 +1442,8 @@
         "name": "us_external_balance"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_pers_spending": {
     "description": "us_pers_spending",
@@ -1259,7 +1458,8 @@
         "name": "us_pers_spending"
       }
     },
-    "frequency": ["q"]
+    "frequency": ["q"],
+    "transform": "y"
   },
   "us_gdp": {
     "description": "US GDP QoQ",
@@ -1274,7 +1474,8 @@
         "name": "us_GDP"
       }
     },
-    "frequency": ["q"]
+    "frequency": ["q"],
+    "transform": "n"
   },
   "us_pce": {
     "description": "US PCE QoQ",
@@ -1289,7 +1490,8 @@
         "name": "us_pce"
       }
     },
-    "frequency": ["q"]
+    "frequency": ["q"],
+    "transform": "y"
   },
   "us_ip_sa": {
     "description": "us_ip_sa",
@@ -1304,12 +1506,13 @@
         "name": "us_ip_sa"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "cons_inflation": {
     "description": "UK Cpi Numbers",
     "asset_class": "Macroeconomy",
-    "sub_asset_class": "cpi",
+    "sub_asset_class": "Inflation",
     "region": "UK",
     "source": {
       "name": "ons",
@@ -1322,7 +1525,8 @@
         "colNames": ["uk_cpi"]
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "retail_sales": {
     "description": "UK Retail Sales Numbers",
@@ -1345,7 +1549,8 @@
         ]
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "production": {
     "description": "UK Production Nuumbers",
@@ -1363,7 +1568,8 @@
         "colNames": ["uk_industrial_prod", "uk_gdp", "uk_manuf_prod"]
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "trade": {
     "description": "UK Trade Nuumbers",
@@ -1377,11 +1583,33 @@
         "sheet_name": "data",
         "header": [0],
         "skiprows": 7,
-        "usecols": [0, 314],
-        "colNames": ["uk_trade_balance"]
+        "usecols": [
+          0, 103, 224, 248, 300, 314, 348, 369, 379, 393, 406, 419, 522, 612,
+          755, 760, 769, 988
+        ],
+        "colNames": [
+          "uk_imports_fuel",
+          "uk_exports_food",
+          "uk_exports_beverages_tobacco",
+          "uk_exports_materials",
+          "uk_trade_balance",
+          "uk_exports_animal_vegetable_oil",
+          "uk_imports_beverages_tobacco",
+          "uk_imports_food",
+          "uk_exports_machines",
+          "uk_exports_manufactures",
+          "uk_exports_chemicals",
+          "uk_exports_fuel",
+          "uk_imports_chemicals",
+          "uk_imports_animal_vegetable_oil",
+          "uk_imports_manufactures",
+          "uk_imports_machines",
+          "uk_imports_materials"
+        ]
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "eu_ind_conf": {
     "description": "EU Industry Confidence",
@@ -1396,7 +1624,40 @@
         "name": "eu_ind_conf"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "eu_retail_sales": {
+    "description": "EU Retail Sales",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "EU",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "EI_ISRR_M",
+        "filter": "/M.TOVT.RT1-SCA.G47.EU27_2020",
+        "name": "eu_retail_sales"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "eu_retail_sales_real": {
+    "description": "EU Real Retail Sales",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "EU",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "EI_ISRR_M",
+        "filter": "/M.TOVV.RT1-SCA.G47.EU27_2020",
+        "name": "eu_retail_sales_real"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
   },
   "de_ind_conf": {
     "description": "Germany Industry Confidence",
@@ -1411,7 +1672,8 @@
         "name": "de_ind_conf"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "fr_ind_conf": {
     "description": "France Industry Confidence",
@@ -1426,7 +1688,8 @@
         "name": "fr_ind_conf"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "uk_ind_conf": {
     "description": "UK Industry Confidence",
@@ -1441,7 +1704,8 @@
         "name": "uk_ind_conf"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "eu_ca": {
     "description": "EU Current Account",
@@ -1456,7 +1720,8 @@
         "name": "eu_ca"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "de_ca": {
     "description": "Germany Current Account",
@@ -1471,7 +1736,8 @@
         "name": "de_ca"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "fr_ca": {
     "description": "France Current Account",
@@ -1486,7 +1752,8 @@
         "name": "fr_ca"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "uk_ca": {
     "description": "UK Current Account",
@@ -1501,7 +1768,8 @@
         "name": "uk_ca"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "eu_ind_prod": {
     "description": "EU Industrial Production",
@@ -1516,7 +1784,8 @@
         "name": "eu_ind_prod"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "de_ind_prod": {
     "description": "Germany Industrial Production",
@@ -1531,7 +1800,8 @@
         "name": "de_ind_prod"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "fr_ind_prod": {
     "description": "France Industrial Production",
@@ -1546,7 +1816,8 @@
         "name": "fr_ind_prod"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "uk_ind_prod": {
     "description": "UK Industrial Production",
@@ -1561,7 +1832,8 @@
         "name": "uk_ind_prod"
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "us_adp": {
     "name": [],
@@ -1570,7 +1842,8 @@
     "region": "US",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "us_adp" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "us_ism_manufacturing": {
     "description": "US ISM Manufacturing",
@@ -1582,7 +1855,8 @@
       "name": "manual",
       "kwargs": { "code": "us_ism_manufacturing" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_ism_new_orders": {
     "name": "US ISM New Orders",
@@ -1591,7 +1865,8 @@
     "region": "US",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "us_ism_new_orders" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_ism_employment": {
     "name": "US ISM Employment",
@@ -1600,7 +1875,8 @@
     "region": "US",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "us_ism_employment" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_mortgage_30y": {
     "name": "US Mortage Rate 30y",
@@ -1609,7 +1885,8 @@
     "region": "US",
     "unit": "percentage",
     "source": { "name": "manual", "kwargs": { "code": "us_mortgage_30y" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_mortgage_15y": {
     "name": "US Mortage Rate 15y",
@@ -1618,7 +1895,8 @@
     "region": "US",
     "unit": "percentage",
     "source": { "name": "manual", "kwargs": { "code": "us_mortgage_15y" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_NFIB_index": {
     "name": [],
@@ -1627,7 +1905,8 @@
     "region": "US",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "us_NFIB_index" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "us_NFIB_plans_inc_empl": {
     "name": [],
@@ -1639,7 +1918,8 @@
       "name": "manual",
       "kwargs": { "code": "us_NFIB_plans_inc_empl" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_NFIB_plan_cap_outlays": {
     "name": [],
@@ -1651,7 +1931,8 @@
       "name": "manual",
       "kwargs": { "code": "us_NFIB_plan_cap_outlays" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_NFIB_plan_inventories": {
     "name": [],
@@ -1663,7 +1944,8 @@
       "name": "manual",
       "kwargs": { "code": "us_NFIB_plan_inventories" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_NFIB_economy": {
     "name": [],
@@ -1672,7 +1954,8 @@
     "region": "US",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "us_NFIB_economy" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "us_NFIB_price_plan": {
     "name": [],
@@ -1681,7 +1964,8 @@
     "region": "US",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "us_NFIB_price_plan" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "zew_confidence": {
     "name": [],
@@ -1690,7 +1974,8 @@
     "region": [],
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "zew_confidence" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "zew_situation": {
     "name": [],
@@ -1699,16 +1984,18 @@
     "region": [],
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "zew_situation" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "eu_hicp": {
     "name": [],
     "asset_class": [],
-    "sub_asset_class": "cpi",
+    "sub_asset_class": "Inflation",
     "region": "EU",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "eu_hicp" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "eu_ip": {
     "name": [],
@@ -1717,7 +2004,8 @@
     "region": "EU",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "eu_ip" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "eu_pmi_manuf": {
     "name": "EU PMI Manufacturing",
@@ -1726,7 +2014,8 @@
     "region": "EU",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "eu_pmi_manuf" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "uk_rs_ex_fuel": {
     "name": [],
@@ -1735,7 +2024,8 @@
     "region": "UK",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "uk_rs_ex_fuel" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "uk_employment": {
     "name": [],
@@ -1744,7 +2034,8 @@
     "region": "UK",
     "unit": "people",
     "source": { "name": "manual", "kwargs": { "code": "uk_employment" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "uk_unemployment": {
     "name": [],
@@ -1753,7 +2044,8 @@
     "region": "UK",
     "unit": "percentage",
     "source": { "name": "manual", "kwargs": { "code": "uk_unemployment" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "uk_pmi_composite": {
     "name": "UK PMI Composite",
@@ -1762,7 +2054,8 @@
     "region": "UK",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "uk_pmi_composite" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "uk_pmi_services": {
     "name": "UK PMI Composite",
@@ -1771,7 +2064,8 @@
     "region": "UK",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "uk_pmi_services" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "uk_pmi_manuf": {
     "name": "UK PMI Manufacturing",
@@ -1780,7 +2074,8 @@
     "region": "UK",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "uk_pmi_manuf" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "uk_pmi_const": {
     "name": "UK PMI Construction",
@@ -1789,16 +2084,18 @@
     "region": "UK",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "uk_pmi_const" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "bra_cpi": {
     "name": [],
     "asset_class": [],
-    "sub_asset_class": "cpi",
+    "sub_asset_class": "Inflation",
     "region": "Brazil",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "bra_cpi" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "bra_ppi_igpm": {
     "name": [],
@@ -1807,7 +2104,8 @@
     "region": "Brazil",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "bra_ppi_igpm" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "bra_ppi_igpdi": {
     "name": [],
@@ -1816,7 +2114,8 @@
     "region": "Brazil",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "bra_ppi_igpdi" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "bra_ppi_igp10": {
     "name": [],
@@ -1825,7 +2124,8 @@
     "region": "Brazil",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "bra_ppi_igp10" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "bra_business_confidence_sa": {
     "name": [],
@@ -1837,7 +2137,8 @@
       "name": "manual",
       "kwargs": { "code": "bra_business_confidence_sa" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "bra_business_situation_sa": {
     "name": [],
@@ -1849,7 +2150,8 @@
       "name": "manual",
       "kwargs": { "code": "bra_business_situation_sa" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "bra_business_expectations_sa": {
     "name": [],
@@ -1861,7 +2163,8 @@
       "name": "manual",
       "kwargs": { "code": "bra_business_expectations_sa" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "bra_ppi_incc": {
     "name": [],
@@ -1870,7 +2173,8 @@
     "region": "Brazil",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "bra_ppi_incc" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "bra_uncertainty": {
     "name": [],
@@ -1879,7 +2183,8 @@
     "region": "Brazil",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "bra_uncertainty" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "bra_uncertainty_media": {
     "name": [],
@@ -1891,7 +2196,8 @@
       "name": "manual",
       "kwargs": { "code": "bra_uncertainty_media" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "bra_uncertainty_expectations": {
     "name": [],
@@ -1903,7 +2209,8 @@
       "name": "manual",
       "kwargs": { "code": "bra_uncertainty_expectations" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "bra_employment_leading_fgv": {
     "name": [],
@@ -1915,7 +2222,8 @@
       "name": "manual",
       "kwargs": { "code": "bra_employment_leading_fgv" }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "bra_gdp_fgv": {
     "name": [],
@@ -1924,7 +2232,8 @@
     "region": "Brazil",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "bra_gdp_fgv" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "bra_ip": {
     "name": [],
@@ -1933,7 +2242,8 @@
     "region": "Brazil",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "bra_ip" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "bra_industry": {
     "name": [],
@@ -1942,7 +2252,8 @@
     "region": "Brazil",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "bra_industry" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "bra_extrativist": {
     "name": [],
@@ -1951,7 +2262,8 @@
     "region": "Brazil",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "bra_extrativist" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "bra_retail_sales": {
     "name": [],
@@ -1960,7 +2272,8 @@
     "region": "Brazil",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "bra_retail_sales" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "bra_exports": {
     "name": [],
@@ -1969,7 +2282,8 @@
     "region": "Brazil",
     "unit": "US$ Millions",
     "source": { "name": "manual", "kwargs": { "code": "bra_exports" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "bra_imports": {
     "name": [],
@@ -1978,7 +2292,8 @@
     "region": "Brazil",
     "unit": "US$ Millions",
     "source": { "name": "manual", "kwargs": { "code": "bra_imports" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "zinc_fut": {
     "name": [],
@@ -1987,7 +2302,8 @@
     "region": [],
     "unit": "US$/",
     "source": { "name": "manual", "kwargs": { "code": "zinc_fut" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "nickel_fut": {
     "name": [],
@@ -1996,7 +2312,8 @@
     "region": [],
     "unit": "US$/",
     "source": { "name": "manual", "kwargs": { "code": "nickel_fut" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "ironOre_fut": {
     "name": [],
@@ -2005,7 +2322,8 @@
     "region": [],
     "unit": "US$/",
     "source": { "name": "manual", "kwargs": { "code": "ironOre_fut" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_new_loans": {
     "name": [],
@@ -2014,7 +2332,8 @@
     "region": "China",
     "unit": "RMB 100 Millions",
     "source": { "name": "manual", "kwargs": { "code": "cny_new_loans" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_total_reserves": {
     "name": [],
@@ -2023,7 +2342,8 @@
     "region": "China",
     "unit": "US$ Millions",
     "source": { "name": "manual", "kwargs": { "code": "cny_total_reserves" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_gold_reserves": {
     "name": [],
@@ -2032,7 +2352,8 @@
     "region": "China",
     "unit": "US$ Millions",
     "source": { "name": "manual", "kwargs": { "code": "cny_gold_reserves" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_m1": {
     "name": [],
@@ -2041,7 +2362,8 @@
     "region": "China",
     "unit": "RMB 100 Millions",
     "source": { "name": "manual", "kwargs": { "code": "cny_m1" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "cny_m2": {
     "name": [],
@@ -2050,7 +2372,8 @@
     "region": "China",
     "unit": "RMB 100 Millions",
     "source": { "name": "manual", "kwargs": { "code": "cny_m2" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "cny_st_rate": {
     "name": [],
@@ -2059,7 +2382,8 @@
     "region": "China",
     "unit": "percentage",
     "source": { "name": "manual", "kwargs": { "code": "cny_st_rate" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_1y_rate": {
     "name": [],
@@ -2068,7 +2392,8 @@
     "region": "China",
     "unit": "percentage",
     "source": { "name": "manual", "kwargs": { "code": "cny_1y_rate" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_5y_rate": {
     "name": [],
@@ -2077,7 +2402,8 @@
     "region": "China",
     "unit": "percentage",
     "source": { "name": "manual", "kwargs": { "code": "cny_5y_rate" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_10y_rate": {
     "name": [],
@@ -2086,7 +2412,8 @@
     "region": "China",
     "unit": "percentage",
     "source": { "name": "manual", "kwargs": { "code": "cny_10y_rate" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_pmi": {
     "name": "China PMI Index",
@@ -2095,7 +2422,8 @@
     "region": "China",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "cny_pmi" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_pmi_production": {
     "name": "China PMI Production Index",
@@ -2104,7 +2432,8 @@
     "region": "China",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "cny_pmi_production" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_pmi_new_orders": {
     "name": "China PMI New Orders Index",
@@ -2113,7 +2442,8 @@
     "region": "China",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "cny_pmi_new_orders" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_pmi_exports": {
     "name": "China PMI Exports Index",
@@ -2122,7 +2452,8 @@
     "region": "China",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "cny_pmi_exports" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_pmi_inventory": {
     "name": "China PMI Inventory Index",
@@ -2131,7 +2462,8 @@
     "region": "China",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "cny_pmi_inventory" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_pmi_imports": {
     "name": "China PMI Imports Index",
@@ -2140,34 +2472,38 @@
     "region": "China",
     "unit": "index",
     "source": { "name": "manual", "kwargs": { "code": "cny_pmi_imports" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_exports": {
     "name": "China Exports Value",
     "asset_class": "Macroeconomy",
     "sub_asset_class": "external_accounts",
     "region": "China",
-    "unit": "index",
+    "unit": "US$ th",
     "source": { "name": "manual", "kwargs": { "code": "cny_exports" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_imports": {
     "name": "China Imports Value",
     "asset_class": "Macroeconomy",
     "sub_asset_class": "external_accounts",
     "region": "China",
-    "unit": "index",
+    "unit": "US$ th",
     "source": { "name": "manual", "kwargs": { "code": "cny_imports" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_trade_balance": {
     "name": "China Trade Balance",
     "asset_class": "Macroeconomy",
     "sub_asset_class": "external_accounts",
     "region": "China",
-    "unit": "index",
+    "unit": "US$ th",
     "source": { "name": "manual", "kwargs": { "code": "cny_trade_balance" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "cny_coal_output": {
     "name": "China Coal Output",
@@ -2176,7 +2512,8 @@
     "region": "China",
     "unit": "10000tons",
     "source": { "name": "manual", "kwargs": { "code": "cny_coal_output" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "cny_oil_output": {
     "name": "China Oil Output",
@@ -2185,7 +2522,8 @@
     "region": "China",
     "unit": "10000tons",
     "source": { "name": "manual", "kwargs": { "code": "cny_oil_output" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "cny_ng_output": {
     "name": "China Natural Gas Output",
@@ -2194,7 +2532,8 @@
     "region": "China",
     "unit": "100mln cu.m",
     "source": { "name": "manual", "kwargs": { "code": "cny_ng_output" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "y"
   },
   "cny_ip": {
     "name": "China Industrial Production",
@@ -2203,7 +2542,8 @@
     "region": "China",
     "unit": "YoY",
     "source": { "name": "manual", "kwargs": { "code": "cny_ip" } },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "can_rates": {
     "name": "Canada Rates",
@@ -2215,7 +2555,8 @@
       "name": "can",
       "kwargs": { "cols": ["can_2y_rate", "can_5y_rate", "can_10y_rate"] }
     },
-    "frequency": ["d", "m"]
+    "frequency": ["d", "m"],
+    "transform": "n"
   },
   "philly_fed": {
     "name": "Philly Fed Data",
@@ -2251,7 +2592,8 @@
         }
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
   },
   "bcb_data": {
     "name": "Brazilian Central Bank",
@@ -2276,6 +2618,31 @@
         }
       }
     },
-    "frequency": ["m"]
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "mxn_cpi_mom": {
+    "description": "Mexico CPI MoM Rate",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Inflation",
+    "region": "Mexico",
+    "source": {
+      "name": "inegi",
+      "kwargs": { "id": "628201", "fuente": "BIE", "name": "mxn_cpi_mom" }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "mxn_cons_conf": {
+    "description": "Mexico Consumer Confidence",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "Mexico",
+    "source": {
+      "name": "inegi",
+      "kwargs": { "id": "454168", "fuente": "BIE", "name": "mxn_cons_conf" }
+    },
+    "frequency": ["m"],
+    "transform": "n"
   }
 }
