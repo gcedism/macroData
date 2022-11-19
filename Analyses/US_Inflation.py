@@ -5,9 +5,9 @@ import matplotlib.ticker as mtick
 
 from numpy import log
 
-from _data.database import database
+import macrodata as md
 
-sec = json.load(open('_data/data_specs.json'))
+sec = json.load(open('macrodata/data_specs.json'))
 
 sel_sec = {
   x: sec[x]
@@ -15,7 +15,7 @@ sel_sec = {
   if (sec[x]['region'] == 'US') and (sec[x]['asset_class'] == 'Inflation')
 }
 
-m_db = database(sel_sec, 'm').data
+m_db = md.database(sel_sec, 'm').data
 
 us_cpi = m_db[[
   'us_cpi', 'us_cpi_core', 'us_cpi_food', 'us_cpi_medicare', 'us_cpi_shelter',
@@ -55,4 +55,4 @@ void = ax[1, 0].text(0,
                      fontstyle='italic',
                      transform=ax[1, 0].transAxes)
 
-plt.savefig('_data/figs/USInflation.jpg')
+plt.savefig('Analyses/figs/USInflation.jpg')

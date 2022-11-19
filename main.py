@@ -1,1 +1,1 @@
-from Analyses import US_Inflation_Model
+from Analyses import US_Inflation
