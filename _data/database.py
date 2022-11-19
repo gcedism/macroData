@@ -78,7 +78,7 @@ class database() :
             
         # If only one ticker is provided, yf returns a Series with no adjustment on names
         if len(tickers) == 1 :
-            _data.name = kwargs['name']
+            _data.name = kwargs[0]['name']
         else : 
             mapping = {x['code'] : x['name'] for x in kwargs}
             _data.columns = _data.columns.map(mapping)

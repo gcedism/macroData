@@ -1627,6 +1627,38 @@
     "frequency": ["m"],
     "transform": "n"
   },
+  "eu_construction_conf": {
+    "description": "EU Construction Confidence",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "EU",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "ei_bsin_m_r2",
+        "filter": "/M.BS-CCI.SA.BAL.EU27_2020",
+        "name": "eu_ind_conf"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "eu_services_conf": {
+    "description": "EU Services Confidence",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "EU",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "ei_bsin_m_r2",
+        "filter": "/M.BS-SCI.SA.BAL.EU27_2020",
+        "name": "eu_ind_conf"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
   "eu_retail_sales": {
     "description": "EU Retail Sales",
     "asset_class": "Macroeconomy",
