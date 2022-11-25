@@ -1,4 +1,7 @@
-import sys, os, io, json, requests, zeep
+import io
+import json
+import requests
+import zeep
 
 import pandas as pd
 import numpy as np
