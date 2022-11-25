@@ -2676,5 +2676,17 @@
     },
     "frequency": ["m"],
     "transform": "n"
+  },
+  "jpy_cpi": {
+    "description": "Japan CPI Index",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Inflation",
+    "region": "Japan",
+    "source": {
+      "name": "manual",
+      "kwargs": { "code": "jpy_cpi" }
+    },
+    "frequency": ["m"],
+    "transform": "y"
   }
 }

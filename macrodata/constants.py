@@ -2,7 +2,7 @@ from datetime import datetime as dt
 
 d_start = '2020-12-31'
 d_start_dt = dt.strptime(d_start, '%Y-%m-%d').date()
-m_start = '1993-01-01'
+m_start = '1970-01-01'
 m_start_2 = '01/01/1993'
 m_start_dt = dt.strptime(m_start, '%Y-%m-%d').date()
 q_start_dt = dt.strptime('1993-03-15', '%Y-%m-%d').date()

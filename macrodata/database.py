@@ -6,7 +6,6 @@ import yfinance as yf
 
 from pandas.tseries.offsets import CDay
 from datetime import datetime as dt
-from datetime import timedelta as td
 
 from .constants import DATES, SOURCES
 from .constants_private import API_KEYS
@@ -14,7 +13,7 @@ from .dateFunctions import isMonthEnd, EoXMonth, eDate, quarterDate
 from .auxFunctions import endog
 
 
-class database():
+class Database():
 
   def __init__(self, i_var: dict, freq: str):
     self.freq = freq

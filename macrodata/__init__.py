@@ -1,5 +1,5 @@
-from .database import database
+from .database import Database
 
-__all__ = ['database']
-__version__ = '0.1.0'
+__all__ = ['Database']
+__version__ = '0.1.1'
 __author__ = 'Gabriel Cedismondi'
