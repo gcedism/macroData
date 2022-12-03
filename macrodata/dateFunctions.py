@@ -1,4 +1,6 @@
+from datetime import date
 from datetime import datetime as dt
+from datetime import timedelta as td
 from pandas.tseries.offsets import CDay
 
 def first_day(i_date) :
@@ -44,13 +46,26 @@ def EoMonth(date) :
     next_month_date = dt(_y, _m, 1).date()
     return (next_month_date - CDay(1)).date()
 
-def EoXMonth(date, x) :
+def EoXMonth(date:date, x:int, calendar:bool=True) -> date :
+    """ Function that returns the last day of x months ahead
+    :parameters:
+        date : date
+            Original Date to be transformed
+        x : int
+            Number of months ahead (0 if same month)
+        calendar : bool
+            Whether to return the last business day or last calendar day
+    """
+
     _m = (date.month + x + 1) % 12
     if _m == 0: _m = 12
     _y = date.year + int((date.month + x) / 12)
         
     _date = dt(_y, _m, 1).date()
-    return (_date - CDay(1)).date()
+    if calendar : 
+        return (_date - CDay(1)).date()
+    else :
+        return (_date - td(days=1))
 
 def quarterDate(quarter:str) :
     year = int(quarter[:4])

@@ -6,10 +6,12 @@ __pycache__
 # Temporary stuff
 temp.csv
 temp.xls
-Tests.ipynb
+tests.ipynb
+tests.py
 
 # Private Stuff
 monthly_database.csv
 constants_private.py
+utils_private.py
 README.ipynb
 REFERENCES.ipynb

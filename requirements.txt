@@ -1,0 +1,6 @@
+json>=
+pandas>=
+numpy>=
+requests>=
+zeep>=
+yfinance>=

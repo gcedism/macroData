@@ -321,7 +321,7 @@
     "description": "EURUSD",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Currencies",
-    "region": "Global",
+    "region": "EU",
     "source": {
       "name": "yahoo",
       "kwargs": { "code": "EURUSD=X", "name": "EURUSD=X" }
@@ -333,7 +333,7 @@
     "description": "GBPUSD",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Currencies",
-    "region": "Global",
+    "region": "UK",
     "source": {
       "name": "yahoo",
       "kwargs": { "code": "GBPUSD=X", "name": "GBPUSD=X" }
@@ -345,7 +345,7 @@
     "description": "USDCAD",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Currencies",
-    "region": "Global",
+    "region": "Canada",
     "source": {
       "name": "yahoo",
       "kwargs": { "code": "CAD=X", "name": "CAD=X" }
@@ -357,7 +357,7 @@
     "description": "AUDUSD",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Currencies",
-    "region": "Global",
+    "region": "Australia",
     "source": {
       "name": "yahoo",
       "kwargs": { "code": "AUDUSD=X", "name": "AUDUSD=X" }
@@ -369,7 +369,7 @@
     "description": "NZDUSD",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Currencies",
-    "region": "Global",
+    "region": "New Zealand",
     "source": {
       "name": "yahoo",
       "kwargs": { "code": "NZDUSD=X", "name": "NZDUSD=X" }
@@ -381,7 +381,7 @@
     "description": "USDJPY",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Currencies",
-    "region": "Global",
+    "region": "Japan",
     "source": {
       "name": "yahoo",
       "kwargs": { "code": "JPY=X", "name": "JPY=X" }
@@ -393,7 +393,7 @@
     "description": "USDSEK",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Currencies",
-    "region": "Global",
+    "region": "Sweden",
     "source": {
       "name": "yahoo",
       "kwargs": { "code": "SEK=X", "name": "SEK=X" }
@@ -405,7 +405,7 @@
     "description": "USDNOK",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Currencies",
-    "region": "Global",
+    "region": "Norway",
     "source": {
       "name": "yahoo",
       "kwargs": { "code": "NOK=X", "name": "NOK=X" }
@@ -417,7 +417,7 @@
     "description": "USDPLN",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Currencies",
-    "region": "Global",
+    "region": "Poland",
     "source": {
       "name": "yahoo",
       "kwargs": { "code": "PLN=X", "name": "PLN=X" }
@@ -429,7 +429,7 @@
     "description": "USDHUF",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Currencies",
-    "region": "Global",
+    "region": "Hungary",
     "source": {
       "name": "yahoo",
       "kwargs": { "code": "HUF=X", "name": "HUF=X" }
@@ -441,7 +441,7 @@
     "description": "USDCZK",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Currencies",
-    "region": "Global",
+    "region": "Czech Rep.",
     "source": {
       "name": "yahoo",
       "kwargs": { "code": "CZK=X", "name": "CZK=X" }
@@ -453,7 +453,7 @@
     "description": "USDMXN",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Currencies",
-    "region": "Global",
+    "region": "Mexico",
     "source": {
       "name": "yahoo",
       "kwargs": { "code": "MXN=X", "name": "MXN=X" }
@@ -465,7 +465,7 @@
     "description": "USDBRL",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Currencies",
-    "region": "Global",
+    "region": "Brazil",
     "source": {
       "name": "yahoo",
       "kwargs": { "code": "BRL=X", "name": "BRL=X" }
@@ -477,7 +477,7 @@
     "description": "USDZAR",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Currencies",
-    "region": "Global",
+    "region": "South Africa",
     "source": {
       "name": "yahoo",
       "kwargs": { "code": "ZAR=X", "name": "ZAR=X" }
@@ -489,7 +489,7 @@
     "description": "USDTRY",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Currencies",
-    "region": "Global",
+    "region": "Turkey",
     "source": {
       "name": "yahoo",
       "kwargs": { "code": "TRY=X", "name": "TRY=X" }
@@ -953,7 +953,7 @@
         "name": "us_civ_work_compensation"
       }
     },
-    "frequency": ["m"],
+    "frequency": ["Q"],
     "transform": "n"
   },
   "us_civ_work_wages": {
@@ -965,7 +965,7 @@
       "name": "bls",
       "kwargs": { "code": "CIU1020000000000A", "name": "us_civ_work_wages" }
     },
-    "frequency": ["m"],
+    "frequency": ["Q"],
     "transform": "n"
   },
   "us_civ_work_benefits": {
@@ -977,7 +977,7 @@
       "name": "bls",
       "kwargs": { "code": "CIU1030000000000A", "name": "us_civ_work_benefits" }
     },
-    "frequency": ["m"],
+    "frequency": ["Q"],
     "transform": "n"
   },
   "us_priv_work_compensation": {
@@ -992,7 +992,7 @@
         "name": "us_priv_work_compensation"
       }
     },
-    "frequency": ["m"],
+    "frequency": ["Q"],
     "transform": "n"
   },
   "us_priv_work_wages": {
@@ -1004,7 +1004,7 @@
       "name": "bls",
       "kwargs": { "code": "CIU2020000000000A", "name": "us_priv_work_wages" }
     },
-    "frequency": ["m"],
+    "frequency": ["Q"],
     "transform": "n"
   },
   "us_priv_work_benefits": {
@@ -1016,7 +1016,7 @@
       "name": "bls",
       "kwargs": { "code": "CIU2030000000000A", "name": "us_priv_work_benefits" }
     },
-    "frequency": ["m"],
+    "frequency": ["Q"],
     "transform": "n"
   },
   "us_govt_work_compensation": {
@@ -1031,7 +1031,7 @@
         "name": "us_govt_work_compensation"
       }
     },
-    "frequency": ["m"],
+    "frequency": ["Q"],
     "transform": "n"
   },
   "us_govt_work_wages": {
@@ -1043,7 +1043,7 @@
       "name": "bls",
       "kwargs": { "code": "CIU3020000000000A", "name": "us_govt_work_wages" }
     },
-    "frequency": ["m"],
+    "frequency": ["Q"],
     "transform": "n"
   },
   "us_govt_work_benefits": {
@@ -1055,7 +1055,7 @@
       "name": "bls",
       "kwargs": { "code": "CIU3030000000000A", "name": "us_govt_work_benefits" }
     },
-    "frequency": ["m"],
+    "frequency": ["Q"],
     "transform": "n"
   },
   "us_job_openings": {
@@ -1509,7 +1509,7 @@
     "frequency": ["m"],
     "transform": "y"
   },
-  "cons_inflation": {
+  "uk_cpi": {
     "description": "UK Cpi Numbers",
     "asset_class": "Macroeconomy",
     "sub_asset_class": "Inflation",
@@ -1517,18 +1517,13 @@
     "source": {
       "name": "ons",
       "kwargs": {
-        "url": "uri=/economy/inflationandpriceindices/datasets/consumerpriceindices/current/mm23.xlsx",
-        "sheet_name": "data",
-        "skiprows": 7,
-        "header": [],
-        "usecols": [0, 27],
-        "colNames": ["uk_cpi"]
+        "name": "uk_cpi"
       }
     },
     "frequency": ["m"],
     "transform": "y"
   },
-  "retail_sales": {
+  "uk_retail_sales_sa": {
     "description": "UK Retail Sales Numbers",
     "asset_class": "Macroeconomy",
     "sub_asset_class": "activity",
@@ -1536,23 +1531,55 @@
     "source": {
       "name": "ons",
       "kwargs": {
-        "url": "uri=/businessindustryandtrade/retailindustry/datasets/retailsalesindexreferencetables/current/mainreferencetables.xlsx",
-        "sheet_name": "KPSA",
-        "skiprows": 8,
-        "header": [],
-        "usecols": [0, 1, 2, 3, 4],
-        "colNames": [
-          "uk_retail_sales_sa",
-          "uk_retail_sales_exfuel_sa",
-          "uk_retail_sales_food_sa",
-          "uk_retail_sales_exfood_sa"
-        ]
+        "name": "uk_retail_sales_sa"
       }
     },
     "frequency": ["m"],
     "transform": "n"
   },
-  "production": {
+  "uk_retail_sales_exfuel_sa": {
+    "description": "UK Retail Sales Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_retail_sales_exfuel_sa"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_retail_sales_food_sa": {
+    "description": "UK Retail Sales Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_retail_sales_food_sa"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_retail_sales_exfood_sa": {
+    "description": "UK Retail Sales Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_retail_sales_exfood_sa"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_industrial_prod": {
     "description": "UK Production Nuumbers",
     "asset_class": "Macroeconomy",
     "sub_asset_class": "activity",
@@ -1560,18 +1587,41 @@
     "source": {
       "name": "ons",
       "kwargs": {
-        "url": "uri=/economy/grossdomesticproductgdp/datasets/gdpmonthlyestimateuktimeseriesdataset/current/mgdp.xlsx",
-        "sheet_name": "data",
-        "header": [0],
-        "skiprows": 7,
-        "usecols": [0, 22, 52, 69],
-        "colNames": ["uk_industrial_prod", "uk_gdp", "uk_manuf_prod"]
+        "name": "uk_industrial_prod"
       }
     },
     "frequency": ["m"],
     "transform": "n"
   },
-  "trade": {
+  "uk_gdp": {
+    "description": "UK Production Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_gdp"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_manuf_prod": {
+    "description": "UK Production Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_manuf_prod"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_imports_fuel": {
     "description": "UK Trade Nuumbers",
     "asset_class": "Macroeconomy",
     "sub_asset_class": "external_accounts",
@@ -1579,33 +1629,231 @@
     "source": {
       "name": "ons",
       "kwargs": {
-        "url": "uri=/economy/nationalaccounts/balanceofpayments/datasets/tradeingoodsmretsallbopeu2013timeseriesspreadsheet/current/mret.xlsx",
-        "sheet_name": "data",
-        "header": [0],
-        "skiprows": 7,
-        "usecols": [
-          0, 103, 224, 248, 300, 314, 348, 369, 379, 393, 406, 419, 522, 612,
-          755, 760, 769, 988
-        ],
-        "colNames": [
-          "uk_imports_fuel",
-          "uk_exports_food",
-          "uk_exports_beverages_tobacco",
-          "uk_exports_materials",
-          "uk_trade_balance",
-          "uk_exports_animal_vegetable_oil",
-          "uk_imports_beverages_tobacco",
-          "uk_imports_food",
-          "uk_exports_machines",
-          "uk_exports_manufactures",
-          "uk_exports_chemicals",
-          "uk_exports_fuel",
-          "uk_imports_chemicals",
-          "uk_imports_animal_vegetable_oil",
-          "uk_imports_manufactures",
-          "uk_imports_machines",
-          "uk_imports_materials"
-        ]
+        "name": "uk_imports_fuel"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_exports_food": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_exports_food"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_exports_beverages_tobacco": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_exports_beverages_tobacco"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_exports_materials": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_exports_materials"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_trade_balance": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_trade_balance"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_exports_animal_vegetable_oil": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_exports_animal_vegetable_oil"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_imports_beverages_tobacco": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_imports_beverages_tobacco"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_imports_food": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_imports_food"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_exports_machines": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_exports_machines"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_exports_manufactures": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_exports_manufactures"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_exports_chemicals": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_exports_chemicals"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_exports_fuel": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_exports_fuel"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_imports_chemicals": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_imports_chemicals"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_imports_animal_vegetable_oil": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_imports_animal_vegetable_oil"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_imports_manufactures": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_imports_manufactures"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_imports_machines": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_imports_machines"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_imports_materials": {
+    "description": "UK Trade Nuumbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "external_accounts",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_imports_materials"
       }
     },
     "frequency": ["m"],
@@ -1621,6 +1869,22 @@
       "kwargs": {
         "flow": "ei_bsin_m_r2",
         "filter": "/M.BS-ICI.SA.BAL.EU27_2020",
+        "name": "eu_ind_conf"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "eu_ind_inventories": {
+    "description": "EU Industry Stocks",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "EU",
+    "source": {
+      "name": "ec",
+      "kwargs": {
+        "flow": "ei_bsin_m_r2",
+        "filter": "/M.BS-ISFP.SA.BAL.EU27_2020",
         "name": "eu_ind_conf"
       }
     },
@@ -2577,57 +2841,46 @@
     "frequency": ["m"],
     "transform": "n"
   },
-  "can_rates": {
-    "name": "Canada Rates",
+  "can_2y_rate": {
+    "name": "Canada 2y Rates",
     "asset_class": "Fixed Income",
     "sub_asset_class": "interest rates",
     "region": "Canada",
     "unit": "percentage",
     "source": {
       "name": "can",
-      "kwargs": { "cols": ["can_2y_rate", "can_5y_rate", "can_10y_rate"] }
+      "kwargs": { "name": "can_2y_rate" }
     },
     "frequency": ["d", "m"],
     "transform": "n"
   },
-  "philly_fed": {
-    "name": "Philly Fed Data",
-    "asset_class": "Macroeconomy",
-    "sub_asset_class": "activity",
-    "region": "US",
-    "unit": "index",
+  "can_5y_rate": {
+    "name": "Canada 5y Rates",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "interest rates",
+    "region": "Canada",
+    "unit": "percentage",
     "source": {
-      "name": "philly",
-      "kwargs": {
-        "mapping": {
-          "GAC": "Current Activity Index",
-          "NOC": "Current New Orders",
-          "SHC": "Current Shipments",
-          "UOC": "Current Unfilled Orders",
-          "DTC": "Current Delivery Time",
-          "IVC": "Current Inventories",
-          "PPC": "Current Prices Paid",
-          "PRC": "Current Prices Received",
-          "NEC": "Current Employment",
-          "AWC": "Current Average Workweek",
-          "GAF": "Future Activity Index",
-          "NOF": "Future New Orders",
-          "SHF": "Future Shipments",
-          "UOF": "Future Unfilled Orders",
-          "DTF": "Future Delivery Time",
-          "IVF": "Future Inventories",
-          "PPF": "Future Prices Paid",
-          "PRF": "Future Prices Received",
-          "NEF": "Future Employment",
-          "AWF": "Future Average Workweek",
-          "CEF": "Future Capital Expenditures"
-        }
-      }
+      "name": "can",
+      "kwargs": { "name": "can_5y_rate" }
     },
-    "frequency": ["m"],
+    "frequency": ["d", "m"],
     "transform": "n"
   },
-  "bcb_data": {
+  "can_10y_rate": {
+    "name": "Canada 10y Rates",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "interest rates",
+    "region": "Canada",
+    "unit": "percentage",
+    "source": {
+      "name": "can",
+      "kwargs": { "name": "can_10y_rate" }
+    },
+    "frequency": ["d", "m"],
+    "transform": "n"
+  },
+  "bra_ipca_MoM": {
     "name": "Brazilian Central Bank",
     "asset_class": "Macroeconomy",
     "sub_asset_class": "activity",
@@ -2636,18 +2889,142 @@
     "source": {
       "name": "bcb",
       "kwargs": {
-        "mapping": {
-          "433": "bra_ipca_MoM",
-          "3546": "bra_reserves",
-          "4513": "bra_net_debt_to_gdp",
-          "21082": "bra_deliquency",
-          "22704": "bra_trade_balance",
-          "22865": "bra_fdi",
-          "22885": "bra_fdi2",
-          "24369": "bra_unemployment_rate",
-          "27840": "bra_m1",
-          "28763": "bra_employment"
-        }
+        "name": "bra_ipca_MoM"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "bra_reserves": {
+    "name": "Brazilian Central Bank",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": {
+      "name": "bcb",
+      "kwargs": {
+        "name": "bra_reserves"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "bra_net_debt_to_gdp": {
+    "name": "Brazilian Central Bank",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": {
+      "name": "bcb",
+      "kwargs": {
+        "name": "bra_net_debt_to_gdp"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "bra_deliquency": {
+    "name": "Brazilian Central Bank",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": {
+      "name": "bcb",
+      "kwargs": {
+        "name": "bra_deliquency"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "bra_trade_balance": {
+    "name": "Brazilian Central Bank",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": {
+      "name": "bcb",
+      "kwargs": {
+        "name": "bra_trade_balance"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "bra_fdi": {
+    "name": "Brazilian Central Bank",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": {
+      "name": "bcb",
+      "kwargs": {
+        "name": "bra_fdi"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "bra_fdi2": {
+    "name": "Brazilian Central Bank",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": {
+      "name": "bcb",
+      "kwargs": {
+        "name": "bra_fdi2"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "bra_unemployment_rate": {
+    "name": "Brazilian Central Bank",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": {
+      "name": "bcb",
+      "kwargs": {
+        "name": "bra_unemployment_rate"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "bra_m1": {
+    "name": "Brazilian Central Bank",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": {
+      "name": "bcb",
+      "kwargs": {
+        "name": "bra_m1"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "bra_employment": {
+    "name": "Brazilian Central Bank",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "activity",
+    "region": "Brazil",
+    "unit": "index",
+    "source": {
+      "name": "bcb",
+      "kwargs": {
+        "name": "bra_employment"
       }
     },
     "frequency": ["m"],
@@ -2688,5 +3065,230 @@
     },
     "frequency": ["m"],
     "transform": "y"
+  },
+  "us_cur_activity": {
+    "name": "us_cur_activity",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "philly", "kwargs": { "name": "us_cur_activity" } },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_cur_new_orders": {
+    "name": "us_cur_new_orders",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "philly", "kwargs": { "name": "us_cur_new_orders" } },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_cur_shipments": {
+    "name": "us_cur_shipments",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "philly", "kwargs": { "name": "us_cur_shipments" } },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_unfilled_orders": {
+    "name": "us_unfilled_orders",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "philly", "kwargs": { "name": "us_unfilled_orders" } },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_cur_delivery_time": {
+    "name": "us_cur_delivery_time",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": {
+      "name": "philly",
+      "kwargs": { "name": "us_cur_delivery_time" }
+    },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_cur_inventories": {
+    "name": "us_cur_inventories",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "philly", "kwargs": { "name": "us_cur_inventories" } },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_cur_prices_paid": {
+    "name": "us_cur_prices_paid",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "philly", "kwargs": { "name": "us_cur_prices_paid" } },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_cur_prices_received": {
+    "name": "us_cur_prices_received",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": {
+      "name": "philly",
+      "kwargs": { "name": "us_cur_prices_received" }
+    },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_cur_employment": {
+    "name": "us_cur_employment",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "philly", "kwargs": { "name": "us_cur_employment" } },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_cur_avg_workweek": {
+    "name": "us_cur_avg_workweek",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "philly", "kwargs": { "name": "us_cur_avg_workweek" } },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_fut_activity": {
+    "name": "us_fut_activity",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "philly", "kwargs": { "name": "us_fut_activity" } },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_fut_new_orders": {
+    "name": "us_fut_new_orders",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "philly", "kwargs": { "name": "us_fut_new_orders" } },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_fut_shipments": {
+    "name": "us_fut_shipments",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "philly", "kwargs": { "name": "us_fut_shipments" } },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_fut_unfilled_orders": {
+    "name": "us_fut_unfilled_orders",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": {
+      "name": "philly",
+      "kwargs": { "name": "us_fut_unfilled_orders" }
+    },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_fut_delivery_time": {
+    "name": "us_fut_delivery_time",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": {
+      "name": "philly",
+      "kwargs": { "name": "us_fut_delivery_time" }
+    },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_fut_inventories": {
+    "name": "us_fut_inventories",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "philly", "kwargs": { "name": "us_fut_inventories" } },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_fut_prices_paid": {
+    "name": "us_fut_prices_paid",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "philly", "kwargs": { "name": "us_fut_prices_paid" } },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_fut_prices_received": {
+    "name": "us_fut_prices_received",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": {
+      "name": "philly",
+      "kwargs": { "name": "us_fut_prices_received" }
+    },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_fut_employment": {
+    "name": "us_fut_employment",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "philly", "kwargs": { "name": "us_fut_employment" } },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_fut_avg_workweek": {
+    "name": "us_fut_avg_workweek",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "philly", "kwargs": { "name": "us_fut_avg_workweek" } },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "us_fut_capex": {
+    "name": "us_fut_capex",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "sentiment",
+    "region": "US",
+    "unit": "index",
+    "source": { "name": "philly", "kwargs": { "name": "us_fut_capex" } },
+    "frequency": ["M"],
+    "transform": "n"
   }
 }

@@ -1,0 +1,23 @@
+ticker_map = {
+    'us_cpi': {'code': 'CUUR0000SA0'},
+    'us_cpi_core': {'code': 'CUUR0000SA0L1E'},
+    'us_cpi_food': {'code': 'CUUR0000SAF1'},
+    'us_cpi_energy': {'code': 'CUUR0000SA0E'},
+    'us_cpi_gasoline': {'code': 'CUUR0000SETB01'},
+    'us_cpi_medicare': {'code': 'CUUR0000SAM'},
+    'us_cpi_shelter': {'code': 'CUUR0000SAH1'},
+    'us_cpi_rent_sa': {'code': 'CUSR0000SEHA'},
+    'us_nonfarm_payroll_sa': {'code': 'CES0000000001'},
+    'us_avg_hour_earn_sa': {'code': 'CES0500000003'},
+    'us_unemployment': {'code': 'LNS14000000'},
+    'us_civ_work_compensation': {'code': 'CIU1010000000000A'},
+    'us_civ_work_wages': {'code': 'CIU1020000000000A'},
+    'us_civ_work_benefits': {'code': 'CIU1030000000000A'},
+    'us_priv_work_compensation': {'code': 'CIU2010000000000A'},
+    'us_priv_work_wages': {'code': 'CIU2020000000000A'},
+    'us_priv_work_benefits': {'code': 'CIU2030000000000A'},
+    'us_govt_work_compensation': {'code': 'CIU3010000000000A'},
+    'us_govt_work_wages': {'code': 'CIU3020000000000A'},
+    'us_govt_work_benefits': {'code': 'CIU3030000000000A'},
+    'us_job_openings': {'code': 'JTS000000000000000JOL'}
+}
