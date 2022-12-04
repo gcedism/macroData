@@ -17,7 +17,7 @@ from datetime import date
 from .constants import DATES, SOURCES #DATES TO BE ELIMINATED
 from .constants_private import API_KEYS
 from .dateFunctions import isMonthEnd, EoXMonth, eDate, quarterDate
-from .utils import endog
+
 
 #To be resolved more independetly :
 from .bls import Client as bls_Client
@@ -31,6 +31,7 @@ from .eurostat import Client as es_Client
 from .inegi import Client as inegi_Client
 from .philly import Client as philly_Client
 from .can import Client as can_Client
+from .modules import Yahoo, Manual
 
 class Database():
     def __init__(self, i_var: dict, start_dt: date, end_dt: date, freq: str):
@@ -81,30 +82,10 @@ class Database():
         #              .interpolate(limit_area='inside'))
 
     def _get_yahoo(self, kwargs: dict):
-        print('Retrieving data from Yahoo Finance...')
-        tickers = [x['code'] for x in kwargs]
-        y_params = {
-            'tickers': tickers,
-            'start': dt.strftime(self._start_dt, '%Y-%m-%d'),
-            'end': dt.strftime(self._end_dt, '%Y-%m-%d'),
-            'interval': '1d'
-        }
-        _data = yf.download(**y_params)
-        _data = _data['Adj Close']
-        _data.index = [x.date() for x in _data.index]
-        if self.freq != 'd':
-            _data = _data.loc[_data.index.map(isMonthEnd)]
-
-        # If only one ticker is provided, yf returns a Series with no adjustment on names
-        if len(tickers) == 1:
-            _data.name = kwargs[0]['name']
-        else:
-            mapping = {x['code']: x['name'] for x in kwargs}
-            _data.columns = _data.columns.map(mapping)
         
-        # Correct data to last calendar day to match other time series
-        _data.index = _data.index.map(lambda x : EoXMonth(x, 0, False))
-
+        tickers = [x['name'] for x in kwargs] # Will change when all functions will be called with ticker list
+        _data = Yahoo(tickers, self._start_dt, self._end_dt, self._freq).update()
+    
         return _data
     
     def _get_bls(self, kwargs: dict) -> pd.DataFrame:
@@ -187,10 +168,12 @@ class Database():
         return _data
 
     def _get_manual(self, kwargs):
-        print('Retrieving data from Manual csv File...')
-        cols = [x['code'] for x in kwargs]
-
-        return endog[cols]
+        
+        tickers = [x['code'] for x in kwargs] # Will change when all functions will be called with ticker list
+        _data = Manual(tickers, self._start_dt, self._end_dt, self._freq).update()
+    
+        return _data
+        
     
     @property
     def data(self):
