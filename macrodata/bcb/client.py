@@ -40,7 +40,6 @@ class Client :
         final_data = []
         for tic in tickers :
             if 'bcb_data' not in _temp.keys() :
-                print('Downloading')
                 series = [ticker_map[x]['code'] for x in ticker_map]
                 wsdl = 'https://www3.bcb.gov.br/sgspub/JSP/sgsgeral/FachadaWSSGS.wsdl'
                 client = zeep.Client(wsdl=wsdl)
@@ -54,8 +53,6 @@ class Client :
                 _data.index = dates
                 _data.columns = ticker_map.keys()
                 _temp['bcb_data'] = _data
-            else :
-                print('Already Downloaded')
                 
             _df = pd.DataFrame(_temp['bcb_data'].loc[:, tic])
             final_data.append(_df)

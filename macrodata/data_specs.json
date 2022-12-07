@@ -2383,6 +2383,26 @@
     "frequency": ["m"],
     "transform": "n"
   },
+  "uk_2y": {
+    "name": "UK PMI Construction",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "UK",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "uk_2y" } },
+    "frequency": ["m"],
+    "transform": "n"
+  },
+  "uk_10y": {
+    "name": "UK PMI Construction",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Sentiment",
+    "region": "UK",
+    "unit": "index",
+    "source": { "name": "manual", "kwargs": { "code": "uk_10y" } },
+    "frequency": ["m"],
+    "transform": "n"
+  },
   "bra_cpi": {
     "name": [],
     "asset_class": [],
@@ -3288,6 +3308,16 @@
     "region": "US",
     "unit": "index",
     "source": { "name": "philly", "kwargs": { "name": "us_fut_capex" } },
+    "frequency": ["M"],
+    "transform": "n"
+  },
+  "uk_halifax_housing": {
+    "name": "uk_halifax_housing",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "housing",
+    "region": "UK",
+    "unit": "MoM",
+    "source": { "name": "manual", "kwargs": { "code": "uk_halifax_housing" } },
     "frequency": ["M"],
     "transform": "n"
   }

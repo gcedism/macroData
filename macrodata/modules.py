@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import requests
+import io
 import pandas as pd
 from datetime import datetime as dt
 from datetime import date
 import yfinance as yf
 
-from .utils import yahoo_mapping, EoXMonth, endog
+from .utils import yahoo_mapping, philly_mapping, EoXMonth, endog
 
 class Client :
     def __init__(self, tickers, start_dt:date, end_dt:date, freq:str) :
@@ -69,3 +71,28 @@ class Manual(Client) :
         print('Retrieving data from Manual csv File...')
         
         return endog.loc[(endog.index >= self._start_dt) * (endog.index <= self._end_dt), self._tickers]
+    
+class Philly(Client):
+    
+    def update(self) -> pd.DataFrame:
+        print('Retrieving data from Philly Fed...')
+        
+        _temp = {}
+        _data = []
+        for tic in self._tickers:
+            
+            if 'philly_fed' not in _temp.keys() :
+                url = 'https://www.philadelphiafed.org/-/media/frbp/assets/surveys-and-data/mbos/historical-data/diffusion-indexes/bos_dif.csv?la=en&hash=433F3C508D5269FD08053D9CCB63FBD7'
+                _s = requests.get(url).content
+                _df = pd.read_csv(io.StringIO(_s.decode('utf-8')), index_col=0)
+                reverse_map = {philly_mapping[x]:x for x in philly_mapping}
+                _df.columns = _df.columns.map(reverse_map)
+                _df.index = _df.index.map(lambda x: EoXMonth(dt.strptime(x, '%b-%y').date(), 0, False))
+                real_start = max(self._start_dt, min(_df.index[0], self._start_dt))
+                real_end = min(self._end_dt, _df.index[-1])
+                _temp['philly_fed'] = _df.loc[(_df.index >= real_start) * (_df.index <= real_end)]
+            
+            final_df = pd.DataFrame(_temp['philly_fed'].loc[:, tic])
+            _data.append(final_df)
+
+        return _data[0].join(_data[1:], how='outer')

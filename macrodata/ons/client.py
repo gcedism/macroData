@@ -66,7 +66,7 @@ class Client :
                 lastRow = [x for x in range(df.shape[0]) if pd.isna(df.index[x])][0] if len([x for x in range(df.shape[0])
                    if pd.isna(df.index[x])]) > 0 else df.shape[0]
                 df = df.iloc[firstRow:lastRow]
-                df.index = [EoXMonth(dt.strptime(x, '%Y %b').date(), 0) for x in df.index]
+                df.index = [EoXMonth(dt.strptime(x, '%Y %b').date(), 0, False) for x in df.index]
                 df.loc[df.index >= self._start_dt]
                 _temp[ticker_map[tic]['dataGroup']] = df
                 

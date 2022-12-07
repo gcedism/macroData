@@ -36,8 +36,18 @@ def EoXMonth(dat:date, x:int, calendar:bool=True) -> date :
     else :
         return (_date - td(days=1))
     
+def nMonths(date1:date, date2:date) -> int :
+    if date1 > date2 :
+        # Raise an error
+        pass
+    else :
+        n = (date2.month - date1.month) + (n.year - n.year) * 12
+    
+    return int(n)
+        
+    
 yahoo_mapping = {
-    'CORP': 'CORP',
+    'corp': 'CORP',
     'LQD': 'LQD',
     'HYG': 'HYG',
     'GOVT': 'GOVT',
@@ -111,4 +121,28 @@ yahoo_mapping = {
     'soybean_meal_fut': 'ZM=F',
     'soybean_oil_fut': 'ZL=F',
     'soybean_fut': 'ZS=F'
+}
+
+philly_mapping = {
+    'us_cur_activity' : 'GAC',
+    'us_cur_new_orders' : 'NOC',
+    'us_cur_shipments' : 'SHC',
+    'us_unfilled_orders' : 'UOC',
+    'us_cur_delivery_time' : 'DTC',
+    'us_cur_inventories' : 'IVC',
+    'us_cur_prices_paid' : 'PPC',
+    'us_cur_prices_received' : 'PRC',
+    'us_cur_employment' : 'NEC',
+    'us_cur_avg_workweek' : 'AWC',
+    'us_fut_activity' : 'GAF',
+    'us_fut_new_orders' : 'NOF',
+    'us_fut_shipments' : 'SHF',
+    'us_fut_unfilled_orders' : 'UOF',
+    'us_fut_delivery_time' : 'DTF',
+    'us_fut_inventories' : 'IVF',
+    'us_fut_prices_paid' : 'PPF',
+    'us_fut_prices_received' : 'PRF',
+    'us_fut_employment' : 'NEF',
+    'us_fut_avg_workweek' : 'AWF',
+    'us_fut_capex' : 'CEF'
 }
