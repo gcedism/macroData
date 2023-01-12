@@ -257,50 +257,50 @@
     "frequency": ["d", "m", "q", "a"],
     "transform": "n"
   },
-  "^IRX": {
+  "us_3m_rate": {
     "description": "US Treasury 3m",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Government Bonds",
     "region": "US",
     "source": {
       "name": "yahoo",
-      "kwargs": { "code": "^IRX", "name": "us_3m_rate" }
+      "kwargs": { "name": "us_3m_rate" }
     },
     "frequency": ["d", "m", "q", "a"],
     "transform": "n"
   },
-  "^FVX": {
+  "us_5y_rate": {
     "description": "US Treasury 5Y",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Government Bonds",
     "region": "US",
     "source": {
       "name": "yahoo",
-      "kwargs": { "code": "^FVX", "name": "us_5y_rate" }
+      "kwargs": { "name": "us_5y_rate" }
     },
     "frequency": ["d", "m", "q", "a"],
     "transform": "n"
   },
-  "^TNX": {
+  "us_10y_rate": {
     "description": "US Treasury 10Y",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Government Bonds",
     "region": "US",
     "source": {
       "name": "yahoo",
-      "kwargs": { "code": "^TNX", "name": "us_10y_rate" }
+      "kwargs": { "name": "us_10y_rate" }
     },
     "frequency": ["d", "m", "q", "a"],
     "transform": "n"
   },
-  "^TYX": {
+  "us_30y_rate": {
     "description": "US Treasury 30Y",
     "asset_class": "Fixed Income",
     "sub_asset_class": "Government Bonds",
     "region": "US",
     "source": {
       "name": "yahoo",
-      "kwargs": { "code": "^TYX", "name": "us_30y_rate" }
+      "kwargs": { "name": "us_30y_rate" }
     },
     "frequency": ["d", "m", "q", "a"],
     "transform": "n"
@@ -1187,6 +1187,66 @@
     "frequency": ["m"],
     "transform": "n"
   },
+  "us_5y_real_rate": {
+    "description": "us_5y_real_rate",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Interest Rates",
+    "region": "US",
+    "source": {
+      "name": "treasury",
+      "kwargs": { "name": "us_5y_real_rate" }
+    },
+    "frequency": ["d"],
+    "transform": "n"
+  },
+  "us_7y_real_rate": {
+    "description": "us_7y_real_rate",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Interest Rates",
+    "region": "US",
+    "source": {
+      "name": "treasury",
+      "kwargs": { "name": "us_7y_real_rate" }
+    },
+    "frequency": ["d"],
+    "transform": "n"
+  },
+  "us_10y_real_rate2": {
+    "description": "us_10y_real_rate",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Interest Rates",
+    "region": "US",
+    "source": {
+      "name": "treasury",
+      "kwargs": { "name": "us_10y_real_rate2" }
+    },
+    "frequency": ["d"],
+    "transform": "n"
+  },
+  "us_20y_real_rate": {
+    "description": "us_20y_real_rate",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Interest Rates",
+    "region": "US",
+    "source": {
+      "name": "treasury",
+      "kwargs": { "name": "us_20y_real_rate" }
+    },
+    "frequency": ["d"],
+    "transform": "n"
+  },
+  "us_30y_real_rate": {
+    "description": "us_30y_real_rate",
+    "asset_class": "Fixed Income",
+    "sub_asset_class": "Interest Rates",
+    "region": "US",
+    "source": {
+      "name": "treasury",
+      "kwargs": { "name": "us_30y_real_rate" }
+    },
+    "frequency": ["d"],
+    "transform": "n"
+  },
   "us_10y_real_rate": {
     "description": "us_10y_real_rate",
     "asset_class": "Fixed Income",
@@ -1518,6 +1578,174 @@
       "name": "ons",
       "kwargs": {
         "name": "uk_cpi"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "y"
+  },
+  "uk_cpi_food": {
+    "description": "UK Cpi Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Inflation",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_cpi_food"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "y"
+  },
+  "uk_cpi_alcohol": {
+    "description": "UK Cpi Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Inflation",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_cpi_alcohol"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "y"
+  },
+  "uk_cpi_clothing": {
+    "description": "UK Cpi Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Inflation",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_cpi_clothing"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "y"
+  },
+  "uk_cpi_housing": {
+    "description": "UK Cpi Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Inflation",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_cpi_housing"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "y"
+  },
+  "uk_cpi_furn": {
+    "description": "UK Cpi Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Inflation",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_cpi_furn"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "y"
+  },
+  "uk_cpi_health": {
+    "description": "UK Cpi Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Inflation",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_cpi_health"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "y"
+  },
+  "uk_cpi_transport": {
+    "description": "UK Cpi Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Inflation",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_cpi_transport"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "y"
+  },
+  "uk_cpi_communication": {
+    "description": "UK Cpi Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Inflation",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_cpi_communication"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "y"
+  },
+  "uk_cpi_recreation": {
+    "description": "UK Cpi Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Inflation",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_cpi_recreation"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "y"
+  },
+  "uk_cpi_education": {
+    "description": "UK Cpi Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Inflation",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_cpi_education"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "y"
+  },
+  "uk_cpi_hotels": {
+    "description": "UK Cpi Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Inflation",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_cpi_hotels"
+      }
+    },
+    "frequency": ["m"],
+    "transform": "y"
+  },
+  "uk_cpi_misc": {
+    "description": "UK Cpi Numbers",
+    "asset_class": "Macroeconomy",
+    "sub_asset_class": "Inflation",
+    "region": "UK",
+    "source": {
+      "name": "ons",
+      "kwargs": {
+        "name": "uk_cpi_misc"
       }
     },
     "frequency": ["m"],

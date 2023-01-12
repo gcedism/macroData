@@ -30,7 +30,7 @@ from .bcb import Client as bcb_Client
 from .eurostat import Client as es_Client
 from .inegi import Client as inegi_Client
 from .can import Client as can_Client
-from .modules import Yahoo, Manual, Philly
+from .modules import Yahoo, Manual, Philly, Treasury
 
 class Database():
     def __init__(self, i_var: dict, start_dt: date, end_dt: date, freq: str):
@@ -97,7 +97,7 @@ class Database():
         index = pd.MultiIndex.from_tuples([(self._var[x]['source']['name'], x) for x in self._var])
         last_dates = [self._data.loc[:, x].dropna().index[-1] for x in self._data]
         last_values = [self._data.loc[:, x].dropna().iloc[-1] for x in self._data]
-        last_nvalues = [self._data.loc[:, x].isna().sum() for x in self._data]
+        last_nvalues = [self._data.loc[:, x].notna().sum() for x in self._data]
         return pd.DataFrame([last_dates, last_values, last_nvalues], columns=index, index=['last_date', 'last_value', 'n of obs']).T
 
     """ ****************** EMBEDDED CLIENTS ************************************* """
@@ -120,6 +120,13 @@ class Database():
         
         tickers = [x for x in self._var.keys() if self._var[x]['source']['name'] == 'manual']
         _data = Manual(tickers, self._start_dt, self._end_dt, self._freq).update()
+    
+        return _data
+    
+    def _get_treasury(self, kwargs):
+        
+        tickers = [x for x in self._var.keys() if self._var[x]['source']['name'] == 'treasury']
+        _data = Treasury(tickers, self._start_dt, self._end_dt, self._freq).update()
     
         return _data
        

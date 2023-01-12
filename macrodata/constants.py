@@ -27,4 +27,6 @@ DATES = {
     'end_year' : '2022'
 }
 
-SOURCES = ['yahoo', 'bls', 'fred', 'census', 'bea', 'fed', 'philly', 'ons', 'can', 'ec', 'bcb', 'inegi', 'manual']
+SOURCES = ['yahoo', 'bls', 'fred', 'census', 'bea',
+           'fed', 'philly', 'treasury', 'ons', 'can', 'ec', 'bcb',
+           'inegi', 'manual']

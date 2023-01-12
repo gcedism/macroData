@@ -3,12 +3,108 @@ from datetime import timedelta as td
 from pandas.tseries.offsets import CDay
 
 ticker_map = {
+    'uk_cpi_health': {
+        'url': 'uri=/economy/inflationandpriceindices/datasets/consumerpriceindices/current/mm23.xlsx',
+        'sheet_name': 'data',
+        'skiprows': 7,
+        'header': [],
+        'col' : 17,
+        'dataGroup' : 'inflation'
+    },
+    'uk_cpi_furn': {
+        'url': 'uri=/economy/inflationandpriceindices/datasets/consumerpriceindices/current/mm23.xlsx',
+        'sheet_name': 'data',
+        'skiprows': 7,
+        'header': [],
+        'col' : 18,
+        'dataGroup' : 'inflation'
+    },
+    'uk_cpi_housing': {
+        'url': 'uri=/economy/inflationandpriceindices/datasets/consumerpriceindices/current/mm23.xlsx',
+        'sheet_name': 'data',
+        'skiprows': 7,
+        'header': [],
+        'col' : 19,
+        'dataGroup' : 'inflation'
+    },
+    'uk_cpi_clothing': {
+        'url': 'uri=/economy/inflationandpriceindices/datasets/consumerpriceindices/current/mm23.xlsx',
+        'sheet_name': 'data',
+        'skiprows': 7,
+        'header': [],
+        'col' : 21,
+        'dataGroup' : 'inflation'
+    },
+    'uk_cpi_alcohol': {
+        'url': 'uri=/economy/inflationandpriceindices/datasets/consumerpriceindices/current/mm23.xlsx',
+        'sheet_name': 'data',
+        'skiprows': 7,
+        'header': [],
+        'col' : 23,
+        'dataGroup' : 'inflation'
+    },
+    'uk_cpi_misc': {
+        'url': 'uri=/economy/inflationandpriceindices/datasets/consumerpriceindices/current/mm23.xlsx',
+        'sheet_name': 'data',
+        'skiprows': 7,
+        'header': [],
+        'col' : 24,
+        'dataGroup' : 'inflation'
+    },    
+    'uk_cpi_food': {
+        'url': 'uri=/economy/inflationandpriceindices/datasets/consumerpriceindices/current/mm23.xlsx',
+        'sheet_name': 'data',
+        'skiprows': 7,
+        'header': [],
+        'col' : 25,
+        'dataGroup' : 'inflation'
+    },
+    'uk_cpi_hotels': {
+        'url': 'uri=/economy/inflationandpriceindices/datasets/consumerpriceindices/current/mm23.xlsx',
+        'sheet_name': 'data',
+        'skiprows': 7,
+        'header': [],
+        'col' : 26,
+        'dataGroup' : 'inflation'
+    },
     'uk_cpi': {
         'url': 'uri=/economy/inflationandpriceindices/datasets/consumerpriceindices/current/mm23.xlsx',
         'sheet_name': 'data',
         'skiprows': 7,
         'header': [],
         'col' : 27,
+        'dataGroup' : 'inflation'
+    },
+    'uk_cpi_education': {
+        'url': 'uri=/economy/inflationandpriceindices/datasets/consumerpriceindices/current/mm23.xlsx',
+        'sheet_name': 'data',
+        'skiprows': 7,
+        'header': [],
+        'col' : 28,
+        'dataGroup' : 'inflation'
+    },
+    'uk_cpi_recreation': {
+        'url': 'uri=/economy/inflationandpriceindices/datasets/consumerpriceindices/current/mm23.xlsx',
+        'sheet_name': 'data',
+        'skiprows': 7,
+        'header': [],
+        'col' : 29,
+        'dataGroup' : 'inflation'
+    },
+    'uk_cpi_communication': {
+        'url': 'uri=/economy/inflationandpriceindices/datasets/consumerpriceindices/current/mm23.xlsx',
+        'sheet_name': 'data',
+        'skiprows': 31,
+        'header': [],
+        'col' : 30,
+        'dataGroup' : 'inflation'
+    },
+    'uk_cpi_transport': {
+        'url': 'uri=/economy/inflationandpriceindices/datasets/consumerpriceindices/current/mm23.xlsx',
+        'sheet_name': 'data',
+        'skiprows': 7,
+        'header': [],
+        'col' : 31,
         'dataGroup' : 'inflation'
     },
     'uk_retail_sales_sa': {

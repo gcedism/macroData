@@ -60,8 +60,9 @@ class Yahoo(Client) :
             reverse_mapping = {yahoo_mapping[x]:x for x in self._tickers}
             _data.columns = _data.columns.map(reverse_mapping)
         
-        # Correct data to last calendar day to match other time series
-        _data.index = _data.index.map(lambda x : EoXMonth(x, 0, False))
+        if self._freq != 'B' :
+            # Correct data to last calendar day to match other time series
+            _data.index = _data.index.map(lambda x : EoXMonth(x, 0, False))
 
         return _data
     
@@ -96,3 +97,41 @@ class Philly(Client):
             _data.append(final_df)
 
         return _data[0].join(_data[1:], how='outer')
+    
+class Treasury(Client) :
+    
+    def update(self) -> pd.DataFrame:
+        print('Retrieving data from Treasury data...')
+        _data = []
+        _temp = {}
+        for tic in self._tickers :
+            
+            if 'treasury' not in _temp.keys() :
+                dfs = []
+                for year in range(self._start_dt.year, self._end_dt.year+1) :
+                    params = {
+                        'type' : 'daily_treasury_real_yield_curve',
+                        'field_tdr_date_value' : str(year),
+                        '_format' : 'csv'
+                    }
+                    p_csv = {
+                        'index_col': 0,
+                    }
+                    
+                    url = 'https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/' + str(year) + '/all?'
+        
+                    r = requests.get(url, params=params).content
+                    dfs.append(pd.read_csv(io.StringIO(r.decode('utf-8')), **p_csv))
+                
+                df = pd.concat(dfs)
+                df.index = df.index.map(lambda x : dt.strptime(x, '%m/%d/%Y').date())
+                df.columns = ['us_5y_real_rate', 'us_7y_real_rate',
+                             'us_10y_real_rate2', 'us_20y_real_rate',
+                             'us_30y_real_rate']
+                _temp['treasury'] = df.sort_index()
+                
+            final_df = pd.DataFrame(_temp['treasury'].loc[:, tic])
+            _data.append(final_df)
+            
+        # return _data[0].join(_data[1:], how='outer')
+        return _data
