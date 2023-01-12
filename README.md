@@ -2,6 +2,26 @@
 ---
 #### <span style='color:blue'> AVAILABLE DATA </span>
 
+Total of 295 data points from 14 differenct sources using API form each one of them
+
+SOURCES :
+- Yahoo Finance
+- BLS - Bureau of Labour Statistics
+- FRED - St Louis FED
+- US Census
+- BEA - Bureau of Economic Analyses
+- US FED
+- Philly FED
+- US Treasury Department
+- ONS - Office for National Statistics (UK)
+- Canada Central Bank
+- Eurostat Data (Europe)
+- Brazilian Central Bank
+- INEGI - National Institute of Statistic and Geography (Mexico)
+- Manual Data - Other manual data
+
+Example : 
+
 ![data_available](https://github.com/gcedism/macroData/blob/main/_docs/data_available.png "data_available")
 
 
@@ -34,7 +54,7 @@ US Inflation Expectations
 
 S&P500 vs US 10Y Real Rate
 
-![snpXreal10](https://github.com/gcedism/macroData/blob/main/_docs/usInfExp.png "snpXreal10")
+![snpXreal10](https://github.com/gcedism/macroData/blob/main/_docs/snpXreal10.png "snpXreal10")
 
 US Housing
 
