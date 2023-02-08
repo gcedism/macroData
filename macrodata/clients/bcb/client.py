@@ -56,8 +56,12 @@ class Client :
                 
             _df = pd.DataFrame(_temp['bcb_data'].loc[:, tic])
             final_data.append(_df)
-
-        return final_data[0].join(final_data[1:], how='outer')
+        
+        final = final_data[0].join(final_data[1:], how='outer')
+        # Correct data to last calendar day to match other time series
+        final.index = final.index.map(lambda x : EoXMonth(x, 0, False))
+        
+        return final
 
     @property
     def data(self):

@@ -1,17 +1,20 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import yfinance as yf
 import numpy as np
-
 import datetime
 from datetime import datetime as dt
 from datetime import timedelta as td
 from datetime import date
+from pathlib import Path
 
 import pandas as pd
 from pandas.tseries.offsets import CDay
 
-FOLDER = __file__[:-len('utils.py')]
+FOLDER = str(Path(__file__).parent.parent)
 
-endog = pd.read_csv(FOLDER + 'manual.csv', index_col=0, encoding='UTF-8')
+endog = pd.read_csv(FOLDER + '/_data/manual.csv', index_col=0, encoding='UTF-8')
 endog.index = endog.index.map(lambda x: dt.strptime(x, '%d.%m.%y').date())
 
 def EoXMonth(dat:date, x:int, calendar:bool=True) -> date :
@@ -45,6 +48,12 @@ def nMonths(date1:date, date2:date) -> int :
     
     return int(n)
         
+def isEndOfMonth(_date:date) -> bool:
+    next_date = _date + CDay(1)
+    if next_date.month != _date.month :
+        return True
+    else :
+        return False
     
 yahoo_mapping = {
     'corp': 'CORP',
@@ -80,6 +89,7 @@ yahoo_mapping = {
     'us_10y_rate': '^TNX',
     'us_30y_rate': '^TYX',
     '^MOVE': '^MOVE',
+    'dxy' : 'DX-Y.NYB',
     'EURUSD=X': 'EURUSD=X',
     'GBPUSD=X': 'GBPUSD=X',
     'CAD=X': 'CAD=X',

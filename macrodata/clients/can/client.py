@@ -60,10 +60,11 @@ class Client :
                      
                 _aux.columns = ticker_map.keys()
                 _temp['canada'] = _aux
+                _temp['canada'].index = _temp['canada'].index.map(lambda x: x.date())
             
             _df = pd.DataFrame(_temp['canada'].loc[:, tic])
             _data.append(_df)
-
+        
         return _data[0].join(_data[1:], how='outer')
 
     @property

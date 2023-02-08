@@ -8,7 +8,7 @@ from datetime import datetime as dt
 from datetime import date
 import yfinance as yf
 
-from .utils import yahoo_mapping, philly_mapping, EoXMonth, endog
+from .utils import yahoo_mapping, philly_mapping, EoXMonth, endog, isEndOfMonth
 
 class Client :
     def __init__(self, tickers, start_dt:date, end_dt:date, freq:str) :
@@ -29,10 +29,15 @@ class Client :
         self._start_dt = start_dt
         self._end_dt = end_dt
         self._tickers = tickers
+        self.update()
+    
+    @property
+    def data(self) :
+        return self._data
 
 class Yahoo(Client) :
     
-    def update(self) -> pd.DataFrame:
+    def update(self):
         print('Retrieving data from Yahoo Finance...')
         codes = [yahoo_mapping[x] for x in self._tickers]
         per_map = {
@@ -62,16 +67,16 @@ class Yahoo(Client) :
         
         if self._freq != 'B' :
             # Correct data to last calendar day to match other time series
-            _data.index = _data.index.map(lambda x : EoXMonth(x, 0, False))
-
-        return _data
+            _data.index = _data.index.map(lambda x : EoXMonth(x, -1, False))
+        
+        self._data = _data
     
 class Manual(Client) :
     
     def update(self) :
         print('Retrieving data from Manual csv File...')
         
-        return endog.loc[(endog.index >= self._start_dt) * (endog.index <= self._end_dt), self._tickers]
+        self._data = endog.loc[(endog.index >= self._start_dt) * (endog.index <= self._end_dt), self._tickers]
     
 class Philly(Client):
     
@@ -96,11 +101,11 @@ class Philly(Client):
             final_df = pd.DataFrame(_temp['philly_fed'].loc[:, tic])
             _data.append(final_df)
 
-        return _data[0].join(_data[1:], how='outer')
+        self._data = _data[0].join(_data[1:], how='outer')
     
 class Treasury(Client) :
     
-    def update(self) -> pd.DataFrame:
+    def update(self):
         print('Retrieving data from Treasury data...')
         _data = []
         _temp = {}
@@ -121,7 +126,9 @@ class Treasury(Client) :
                     url = 'https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/' + str(year) + '/all?'
         
                     r = requests.get(url, params=params).content
-                    dfs.append(pd.read_csv(io.StringIO(r.decode('utf-8')), **p_csv))
+                    if len(r) > 0 :
+                        _df = pd.read_csv(io.StringIO(r.decode('utf-8')), **p_csv)
+                        dfs.append(_df)
                 
                 df = pd.concat(dfs)
                 df.index = df.index.map(lambda x : dt.strptime(x, '%m/%d/%Y').date())
@@ -133,5 +140,11 @@ class Treasury(Client) :
             final_df = pd.DataFrame(_temp['treasury'].loc[:, tic])
             _data.append(final_df)
             
-        # return _data[0].join(_data[1:], how='outer')
-        return _data
+        final_data = _data[0].join(_data[1:], how='outer')
+        if self._freq == 'M' :
+            final = final_data.loc[[isEndOfMonth(x) for x in final_data.index]]
+            # Correct data to last calendar day to match other time series
+            final.index = final.index.map(lambda x : EoXMonth(x, 0, False))
+            self._data = final
+        else :
+            self._data = final_data

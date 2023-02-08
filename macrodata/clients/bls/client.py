@@ -50,7 +50,8 @@ class Client :
             new_data = self._aux_blsData(url, p, h)
             _data = pd.concat((_data, new_data))
             _start += 20
-
+        
+        _data.index = _data.index.map(lambda x: x.date())
         return _data
     
     def _aux_blsData(self, url, p, h):

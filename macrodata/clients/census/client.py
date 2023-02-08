@@ -65,9 +65,10 @@ class Client :
         _start = date(self._start_year, 1, 1)
         _end = date(self._end_year+1, 1, 1)
         _index = pd.date_range(_start, _end, freq=self._freq)
-        
+                
         final_data = _data[0].join(_data[1:], how='outer')
         final_data.index = _index
+        final_data.index = final_data.index.map(lambda x: x.date())
         
         return final_data
 

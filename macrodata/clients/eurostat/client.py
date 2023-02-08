@@ -51,12 +51,19 @@ class Client :
             _s = requests.get(url_f, p).content
             df = pd.read_csv(io.StringIO(_s.decode('utf-8')))
 
-            _data = df.pivot_table(values='OBS_VALUE', index='TIME_PERIOD', columns='geo', aggfunc=np.sum)
-            _data.columns = [tic]
-            _data.index = _data.index.map(lambda x: EoXMonth(dt.strptime(x, '%Y-%m').date(), 0))
+            if not df.empty :
+                _data = df.pivot_table(values='OBS_VALUE', index='TIME_PERIOD', columns='geo', aggfunc=np.sum)
+                _data.columns = [tic]
+                _data.index = _data.index.map(lambda x: EoXMonth(dt.strptime(x, '%Y-%m').date(), 0))
+            else :
+                _data = pd.DataFrame()
+                print(f'No data for {tic}')
+                #TO DO : transfrom into Logging
             data.append(_data)
 
         final = data[0].join(data[1:], how='outer')
+         # Correct data to last calendar day to match other time series
+        final.index = final.index.map(lambda x : EoXMonth(x, 0, False))
 
         return final
 

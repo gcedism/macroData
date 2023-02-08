@@ -58,7 +58,8 @@ class Client :
         _data = pd.DataFrame.from_dict(_data)
         _start = dt.strptime(_data.index[0], '%Y-%m-%d').date()
         _data.index = pd.date_range(_start, periods=_data.shape[0], freq=self._freq)
-
+        _data.index = _data.index.map(lambda x: x.date())
+        
         return _data
 
     @property
