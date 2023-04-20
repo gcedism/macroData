@@ -1,0 +1,3 @@
+API_KEYS = {
+    'BLS_API_KEY' : '8494059d2e194e3d92592613a48ce565',
+}

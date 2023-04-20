@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import json
-import io
 import requests
+import logging
 import pandas as pd
 import numpy as np
 from datetime import date
@@ -11,6 +11,8 @@ from datetime import datetime as dt
 
 from .utils import ticker_map, EoXMonth
 from .utils_private import API_KEYS
+
+logger = logging.getLogger(__name__)
 
 class Client :
     
@@ -27,7 +29,7 @@ class Client :
             freq: str
                 Frequency of the data, available values are : B, M, Q, A
         '''
-        
+        logger.debug('Initializing Mexico Client')
         self._freq = freq
         self._start_dt = start_dt
         self._start_per = date.strftime(start_dt, '%Y-%m')
@@ -38,6 +40,7 @@ class Client :
         _data = []
         p = {'type': 'json'}
         
+        logger.debug(f'Retrieving data for {tickers}')
         for tic in tickers:
             url = ('http://en.www.inegi.org.mx/app/api/indicadores/desarrolladores/jsonxml/INDICATOR/'
             + ticker_map[tic]['id'] 
@@ -53,6 +56,8 @@ class Client :
             _data.append(pd.DataFrame(_d))
 
         _data = _data[0].join(_data[1:], how='outer')
+        logger.debug('Success')
+        logger.debug('************* END OF MEXICO CLIENT *********')
         return _data
 
     @property

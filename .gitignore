@@ -4,15 +4,10 @@ __pycache__
 .DS_Store
 
 # Temporary stuff
-temp.csv
-temp.xls
 tests.ipynb
 tests.py
-database.ipynb
+
 
 # Private Stuff
-monthly_database.csv
-constants_private.py
-utils_private.py
 README.ipynb
 REFERENCES.ipynb

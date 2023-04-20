@@ -90,36 +90,7 @@ def lastHistory(dbPathName:str, tableName:str,
     
     return pd.read_sql(stmt, conn, index_col = table.c.keys()[0]).sort_index()
 
-# def addTrade(dbPathName:str, trade:dict) :
-    
-#     Base = orm.declarative_base()
-#     class Blotter(Base) :
-#         __tablename__ = 'blotter'
-#         __table_args__ = {'extend_existing': True}
-    
-#         id = sa.Column(sa.Integer, primary_key=True, autoincrement=True)
-#         ticker = sa.Column(sa.String, nullable=False)
-#         date = sa.Column(sa.Date, nullable=False)
-#         quantity = sa.Column(sa.Float, nullable=False)
-#         cost_price = sa.Column(sa.Float, nullable=False)
-#         account = sa.Column(sa.String, nullable=False)
-        
-#         def __repr__(self) :
-#             return f"Trade('Ticker: {self.ticker}', 'Quantity: {self.quantity}')"
-    
-#     DATABASE = {
-#        'drivername': 'sqlite',
-#        'database': dbPathName
-#     }
-
-#     engine = sa.create_engine(URL.create(**DATABASE))
-#     session = orm.Session(engine)
-#     newTrade = Blotter(**trade)
-#     session.add(newTrade)
-#     session.commit()
-#     session.close()
-#     engine.dispose()
-    
+  
 def addCashTrade(currency:str, amount:float, date:date, account:str,
                  classification:str, dbPathName:str) :
     
@@ -283,3 +254,41 @@ def updateYahooUpToYesterday() :
         session.close()
         engine.dispose()
         return 'History Updated'
+    
+def addNewHistoryItem(tickers:list[str]) :
+    DATABASE = {
+       'drivername': 'sqlite',
+       'database': 'portfolio/_data/Market.db'
+    }
+    engine = sa.create_engine(URL.create(**DATABASE))
+    Base = orm.declarative_base()
+    class History(Base) :
+        __table__ = sa.Table('history', Base.metadata, autoload_with=engine)
+    
+    for ticker in new_tickers :
+        engine.execute('ALTER TABLE history ADD COLUMN %s float' % (ticker))
+        
+    session = orm.Session(engine)
+    histItems = session.scalars(sa.select(History)).all()
+    start_dt = histItems[0].Date
+    end_dt = histItems[-1].Date
+    
+    new_prices = yf.download(new_tickers, start=start_dt, end=end_dt, interval='1d')['Adj Close']
+    new_prices.index = new_prices.index.map(lambda x:x.date())
+    
+    histItems = session.scalars(sa.select(History).where(History.Date.in_(new_prices.index))).all()
+    
+    if len(tickers) > 1 :
+        for histItem in histItems :
+            for ticker in new_tickers :
+                setattr(histItem, ticker, new_prices.loc[histItem.Date, ticker])
+    else :
+        for histItem in histItems :
+            setattr(histItem, new_tickers[0], new_prices.loc[histItem.Date])
+    
+    session.add_all(histItems)
+    session.commit()
+    session.close()
+    engine.dispose()
+    
+    logger.info(f'Items {tickers} added to History')

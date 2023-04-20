@@ -3,12 +3,15 @@
 
 import requests
 import io
+import logging
 import pandas as pd
 from datetime import datetime as dt
 from datetime import date
 import yfinance as yf
 
 from .utils import yahoo_mapping, philly_mapping, EoXMonth, endog, isEndOfMonth
+
+logger = logging.getLogger(__name__)
 
 class Client :
     def __init__(self, tickers, start_dt:date, end_dt:date, freq:str) :
@@ -17,10 +20,13 @@ class Client :
         :Parameters:
             tickers : str, list
                 Coded list of indicators from a list of available items
+                
             start_dt : datetime.Date
                 Start date to start extraction
+                
             end_dt : datetime.Date
                 End date to end extraction
+                
             freq: str
                 Frequency of the data, available values are : B, M, Q, A
         '''
@@ -69,6 +75,7 @@ class Yahoo(Client) :
             # Correct data to last calendar day to match other time series
             _data.index = _data.index.map(lambda x : EoXMonth(x, -1, False))
         
+        logger.info(f'Yahoo data downloaded for {self._tickers}')
         self._data = _data
     
 class Manual(Client) :

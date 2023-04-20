@@ -47,21 +47,7 @@ logger.debug('Session connected')
 
 class Manager :
     
-    sources = session.scalars(sa.select(Data.source.distinct())).all()
     lastDate = session.scalars(sa.select(History).order_by(History.index.desc())).first().index
-    
-    @classmethod
-    def separateSources(cls, tickers:list[str]) -> dict[str] :
-        items = (session.scalars(sa.select(Data)
-                                 .where(Data.id.in_(tickers)))
-               .all())
-        
-        results = {source:[item.id for item in items if item.source == source]
-                   for source in cls.sources}
-        
-        logger.debug(f'Separated {tickers} in respective sources')
-        
-        return results
     
     @classmethod
     def downloadFromSource(cls, source:str, tickers:list[str],

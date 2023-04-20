@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import logging
+from ..logs import logHeader
+
 from .bcb import Client as bcbClient
 from .bea import Client as beaClient
 from .bls import Client as blsClient
@@ -16,3 +19,21 @@ from .modules import (Yahoo as yahooClient,
                       Manual as manualClient)
 
 from .utils import isEndOfMonth
+
+logger = logging.getLogger(__name__)
+logger.debug(logHeader)
+
+__all__ = ['bcbClient',
+           'beaClient',
+           'blsClient',
+           'canClient', 
+           'censusClient', 
+           'ecClient', 
+           'fedClient',
+           'fredClient',
+           'inegiClient',
+           'onsClient',
+           'yahooClient',
+           'treasuryClient',
+           'manualClient'
+]

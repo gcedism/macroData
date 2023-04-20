@@ -35,6 +35,13 @@ LOGGING_CONFIG = {
             'filename': FOLDER + '/manager.log',
             'mode' : 'w'
         },
+        'file_manager_clients': { 
+            'level': 'DEBUG',
+            'formatter': 'file',
+            'class': 'logging.FileHandler',
+            'filename': FOLDER + '/clients.log',
+            'mode' : 'w'
+        },
     },
     'loggers': { 
         '': {  # root logger
@@ -58,7 +65,7 @@ LOGGING_CONFIG = {
             'propagate': True
         },
         'macrodata.clients': {  
-            'handlers': ['console', 'file_manager'],
+            'handlers': ['console', 'file_manager_clients'],
             'level': 'DEBUG',
             'propagate': True
         }

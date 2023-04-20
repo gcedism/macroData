@@ -1,0 +1,3 @@
+API_KEYS = {
+    'INEGI_API_KEY' : '307dcf40-2532-37d0-5f95-37ad6b83bbc1',
+}
