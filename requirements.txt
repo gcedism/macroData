@@ -1,6 +1,6 @@
-json>=
-pandas>=
-numpy>=
-requests>=
-zeep>=
-yfinance>=
+jupyterlab>=3.6.3
+matplotlib>=3.7.1
+sqlalchemy>=2.0.10
+streamlit>=1.21.0
+yfinance>=0.2.18
+zeep>=4.2.1

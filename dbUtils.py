@@ -28,7 +28,8 @@ def tablesDescription(dbPathName:str) :
     insp = sa.inspect(engine)
     table_names = insp.get_table_names()
     
-    meta = sa.MetaData(engine)
+    meta = sa.MetaData()
+    meta.reflect(bind=engine)
     tables = {}
     for table_name in table_names :
         tables[table_name] = sa.Table(table_name, meta, autoload=True)
